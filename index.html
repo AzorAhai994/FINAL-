@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fullpage.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -125,7 +126,7 @@
     <div class="page2 section" id="portfolio" data-section-name="portfolio">
 
 
-        <div id="filters" class="tooltip">
+        <div id="filters" class="tooltip hidden fadeInLeft">
 
             <i class="fas fa-asterisk" data-filter="*"></i>
 
@@ -288,7 +289,8 @@
     <!-- end of 3 ABOUT ME -->
 
     <!--scripts-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/tiltfx.js"></script>
     <script src="js/overlay.js"></script>
@@ -298,17 +300,7 @@
     </script>
     <script src="js/packery-mode.pkgd.min.js"></script>
     <script src="js/parallaxTilt.min.js"></script>
-    <script>
-        $(function () {
-            $.scrollify({
-                section: ".section",
-                //standardScrollElements: ".grid",
-                scrollSpeed: 650,
-                setHeights: false,
 
-            });
-        });
-    </script>
     <script>
         var $grid = $('.grid').isotope({
             sortBy: 'random',
@@ -323,9 +315,9 @@
             }
         });
 
-        $(window).load(function () {
+        $(window).on("load", (function () {
             var $container = $('.grid');
-        });
+        }));
 
         // layout Isotope after each image loads
         $grid.imagesLoaded().progress(function () {
@@ -389,10 +381,22 @@
         }
     </script>
     <script>
+        $(function () {
+            $.scrollify({
+                section: ".section",
+                //standardScrollElements: ".grid",
+                scrollSpeed: 650,
+                setHeights: false,
+
+
+            });
+        });
+    </script>
+    <script>
         $('#filters').switchstyler({ //fixed object
-            on: '.grid', //target section
-            addClass: 'visible',
-            removeClass: 'remove-class' //classes to remove
+            on: '.page2', //target section
+            addClass: 'animated',
+            removeClass: 'hidden' //classes to remove
         });
     </script>
 

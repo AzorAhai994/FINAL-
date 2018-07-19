@@ -1,6 +1,6 @@
 /*
  * switchstyler
- * 
+ *
  *
  * Copyright (c) 2014 Luca Dimola
  * Licensed under the MIT license.
@@ -12,22 +12,22 @@
 
     var menuItems = $(this);
     var sectionSwitch = $(options.on);
-    
-    $(window).scroll(function() {
+
+    $(window).scroll(function () {
       switchStyler();
     });
 
     /* hack */
-    $( window ).load(function() {
+    $(window).on("load", (function () {
       switchStyler();
-      $(window).delay(900).queue(function(next){
+      $(window).delay(900).queue(function (next) {
         switchStyler();
         next();
       });
-    });
-    
+    }));
+
     function switchStyler() {
-      
+
       menuItems.each(function () {
         var matchCount = 0;
         var itemMidPoint = $(this).position().top + ($(this).outerHeight(true) / 2);
@@ -45,12 +45,12 @@
           $(this).removeClass(options.addClass).addClass(options.removeClass);
         }
       });
-      
+
     }
 
   };
-  
-  
+
+
 
   // Static method.
   $.switchstyler = function (options) {
