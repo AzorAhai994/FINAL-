@@ -108,7 +108,7 @@
     <!-- end of 0.5 NAVIGATION MENU -->
 
     <!-- 1 LANDING PAGE -->
-    <div class="page1 section" id="" data-section-name="home">
+    <div class="page1 section" id="home" data-section-name="home">
 
 
         <div class="hero">
@@ -123,7 +123,8 @@
     <!-- end of 1 LANDING PAGE -->
 
     <!-- 2 PORTFOLIO -->
-    <div class="page2 section" id="" data-section-name="portfolio">
+
+    <div class="page2 section" id="portfolio" data-section-name="portfolio">
 
 
         <div id="filters" class="tooltip hidden fadeInLeft">
@@ -268,7 +269,7 @@
 
 
     <!-- 3 ABOUT ME -->
-    <div id="about-me" class="page3 section" data-section-name="about">
+    <div id="about-me" class="page3 section">
         <div class="contain">
             <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover animated fadeInLeft">
                 <figure class="tilter_figure">
@@ -291,10 +292,12 @@
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/tiltfx.js"></script>
     <script src="js/overlay.js"></script>
     <script src="js/switchstyler.js"></script>
+    <script src="js/pulltorefresh.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js">
     </script>
@@ -387,6 +390,7 @@
                 //standardScrollElements: ".grid",
                 scrollSpeed: 650,
                 setHeights: false,
+                standardScrollElements: '.grid',
 
 
             });
@@ -399,7 +403,14 @@
             removeClass: 'hidden' //classes to remove
         });
     </script>
-
+    <script>
+        var ptr = PullToRefresh.init({
+            mainElement: 'body',
+            onRefresh: function () {
+                window.location.reload();
+            }
+        });
+    </script>
 
 </body>
 
