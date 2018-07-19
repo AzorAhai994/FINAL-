@@ -20,6 +20,7 @@ body {
 }
 
 /* Color schemes */
+
 .demo-adsila {
 	--color-text: #57585c;
 	--color-background: #fff;
@@ -77,6 +78,7 @@ body {
 }
 
 /* Fade effect */
+
 .js body {
 	opacity: 0;
 	transition: opacity 0.3s;
@@ -93,13 +95,6 @@ a {
 	outline: none;
 }
 
-a:hover,
-a:focus {
-	color: #423c2b;
-	color: var(--color-link-hover);
-	outline: none;
-}
-
 .hidden {
 	position: absolute;
 	overflow: hidden;
@@ -109,6 +104,7 @@ a:focus {
 }
 
 /* Icons */
+
 .icon {
 	display: block;
 	width: 1.5em;
@@ -150,9 +146,7 @@ main {
 	pointer-events: none;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto auto 4em;
-	grid-template-areas: 'header ...'
-	'... ...'
-	'github demos';
+	grid-template-areas: 'header ...' '... ...' 'github demos';
 }
 
 .content--fixed a {
@@ -160,6 +154,7 @@ main {
 }
 
 /* Header */
+
 .codrops-header {
 	position: relative;
 	z-index: 100;
@@ -220,6 +215,7 @@ a.demo--current {
 }
 
 /* Top Navigation Style */
+
 .codrops-links {
 	position: relative;
 	display: flex;
@@ -236,6 +232,7 @@ a.demo--current {
 }
 
 /* Common styles for the menus */
+
 .menu {
 	position: relative;
 	z-index: 10;
@@ -276,7 +273,6 @@ a.demo--current {
 	.demos {
 		display: flex;
 		padding-right: 80px;
-
 		justify-self: end;
 	}
 	.demo {

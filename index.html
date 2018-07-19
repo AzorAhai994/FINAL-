@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+
+
+
 
 </head>
 
@@ -62,6 +66,7 @@
             overlay.style.display = 'none';
         })
     </script>
+    <!-- end of 0 PRELOADER -->
 
     <!-- 0.5 NAVIGATION MENU -->
     <header>
@@ -99,6 +104,7 @@
             </section>
         </nav>
     </header>
+    <!-- end of 0.5 NAVIGATION MENU -->
 
     <!-- 1 LANDING PAGE -->
     <div class="page1 section" id="home" data-section-name="home">
@@ -113,7 +119,7 @@
 
         </div>
     </div>
-    <!-- /1 LANDING PAGE -->
+    <!-- end of 1 LANDING PAGE -->
 
     <!-- 2 PORTFOLIO -->
     <div class="page2 section" id="portfolio" data-section-name="portfolio">
@@ -257,11 +263,11 @@
         </div>
 
     </div>
-
+    <!-- end of 2 PORTFOLIO -->
 
 
     <!-- 3 ABOUT ME -->
-    <div class="page3 section">
+    <div id="about-me" class="page3 section">
         <div class="contain">
             <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover animated fadeInLeft">
                 <figure class="tilter_figure">
@@ -279,11 +285,14 @@
             </a>
         </div>
     </div>
+    <!-- end of 3 ABOUT ME -->
+
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/tiltfx.js"></script>
     <script src="js/overlay.js"></script>
+    <script src="js/switchstyler.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js">
     </script>
@@ -294,8 +303,9 @@
             $.scrollify({
                 section: ".section",
                 //standardScrollElements: ".grid",
-                scrollSpeed: 750,
+                scrollSpeed: 650,
                 setHeights: false,
+
             });
         });
     </script>
@@ -377,6 +387,13 @@
                 });
             });
         }
+    </script>
+    <script>
+        $('#filters').switchstyler({ //fixed object
+            on: '.grid', //target section
+            addClass: 'visible',
+            removeClass: 'remove-class' //classes to remove
+        });
     </script>
 
 

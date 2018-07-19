@@ -12,7 +12,7 @@ body {
     height: 20px;
     width: 50px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 12;
 }
 
 .toggle-button::after {
@@ -71,6 +71,7 @@ body {
 
 .overlay {
     position: fixed;
+    z-index: 11;
     background-image: linear-gradient(120deg, #131417 0%, #1e212f 100%);
     top: 0;
     left: 0;

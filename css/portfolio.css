@@ -39,6 +39,7 @@ body {
 }
 
 .tooltip {
+    display: none;
     border-radius: 38px;
     background: #ffffff2b;
     width: 4vw;

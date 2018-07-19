@@ -27,19 +27,8 @@ body {
 
 a {
   outline: none;
-  color: rgb(160, 148, 147);
+  color: white;
   text-decoration: none;
-}
-
-.cvet {
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-a:hover,
-a:focus {
-  color: rgb(197, 135, 130);
 }
 
 .mobile-note {

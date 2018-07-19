@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    z-index: 10000;
     position: fixed;
     background-color: #14171a;
     width: 100%;
