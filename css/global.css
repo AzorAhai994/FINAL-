@@ -14,3 +14,10 @@ header {
 .page3 {
     height: 100vh;
 }
+
+@media screen and (max-width: 40em) {
+    .page1 {
+        height: calc(100vh-56px);
+    }
+    
+}
