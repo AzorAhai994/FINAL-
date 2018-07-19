@@ -155,6 +155,7 @@ a {
     left: 20px;
     bottom: 20px;
     right: 20px;
+    height: 96vh;
   }
   .mobile-note {
     display: block;
