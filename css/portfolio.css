@@ -41,18 +41,18 @@ body {
 
 .tooltip {
     border-radius: 38px;
-    background: #ffffff2b;
-    width: 4vw;
-    height: 48vh;
+    background: rgba(255, 255, 255, 0.3607843137254902);
+    width: 4%;
+    height: 48%;
     position: fixed;
     top: 214px;
-    left: 1vw;
-    z-index: 10;
+    left: 1%;
+    z-index: 9;
     transition: 0.35s all ease;
 }
 
 .tooltip:hover {
-    background: #ffffffbd;
+    background: #ffffffc2;
     transition: 0.35s all ease;
 }
 
@@ -61,7 +61,7 @@ body {
     display: block;
     color: #000;
     margin: 39% auto;
-    opacity: 0.45;
+    opacity: 0.55;
 }
 
 .tooltip i:hover {

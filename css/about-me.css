@@ -14,22 +14,22 @@
 	display: block;
 }
 
-.container a {
+.contain a {
 	outline: none;
 	color: #fff;
 	text-decoration: none;
 	transition: color 0.2s;
 }
 
-.container ul,
-.container li {
+.contain ul,
+.contain li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.container a:hover,
-.container a:focus {
+.contain a:hover,
+.contain a:focus {
 	color: #fff;
 	text-decoration: none;
 }
