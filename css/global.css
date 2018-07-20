@@ -18,7 +18,7 @@ header {
 .page3 {
     min-height: 100vh;
 }
-
+/*
 .page1 {
     @supports (-webkit-appearance: none) {
         .os-android & {
@@ -26,3 +26,4 @@ header {
         }
     }
 }
+*/
