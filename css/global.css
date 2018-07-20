@@ -12,12 +12,12 @@ header {
 }
 
 .page2 {
-    
+    min-height: 100vh;
 }
 
 .page3 {
     min-height: 100vh;
-}
+}/*
 .page1,
 .page2 {
     @supports (-webkit-appearance: none) {
@@ -26,3 +26,4 @@ header {
         }
     }
 }
+*/
