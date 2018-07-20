@@ -124,7 +124,7 @@
 
     <!-- 2 PORTFOLIO -->
 
-    <div class="page2 section" id="portfolio" data-section-name="portfolio">
+    <div class="page2 " id="portfolio-" data-section-name="portfolio">
 
 
         <div id="filters" class="tooltip hidden fadeInLeft">
@@ -138,7 +138,7 @@
             <i class="fas fa-tshirt"></i>
             <i class="fas fa-circle-notch"></i>
         </div>
-        <div class="grid gallery">
+        <div class="grid gallery section">
             <div class="grid-sizer">
 
             </div>
@@ -269,7 +269,7 @@
 
 
     <!-- 3 ABOUT ME -->
-    <div id="about-me" class="page3 section">
+    <div id="about--me" class="page3 section" data-section-name="about-me">
         <div class="contain">
             <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover animated fadeInLeft">
                 <figure class="tilter_figure">
@@ -404,7 +404,7 @@
         });
     </script>
     <script>
-        /*var ptr = PullToRefresh.init({
+        var ptr = PullToRefresh.init({
             mainElement: 'body',
             onRefresh: function () {
                 window.location.reload();
@@ -412,9 +412,7 @@
         });
     </script>
     <script src="js/mobile-chrome-vh-fix.js"></script>
-    <script>
-        < script src = "mobile-chrome-vh-fix.js" >
-    </script>
+
     <script>
         var vhFix = new VHChromeFix([{
                 selector: '.page1',
