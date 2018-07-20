@@ -201,6 +201,9 @@
 	}
 	.page1 {
 		min-height: 100vh;
+		height: 100vh;
 	}
+	.grid-sizer, .grid-item {
+		width: 33.3333%; }
 	
 }
