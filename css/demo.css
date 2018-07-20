@@ -262,7 +262,7 @@ a.demo--current {
 .menu__item-label {
 	margin: 0 0 0 0.5em;
 }
-
+/*
 @media screen and (min-width: 50em) {
 	.icon--keyboard {
 		position: absolute;
