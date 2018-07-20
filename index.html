@@ -73,6 +73,7 @@
     <header>
         <div class="navbar-header">
             <div class="toggle-button" id="toggle">
+                <div id="circle" class="krug"></div>
                 <span class="bar top"></span>
                 <span class="bar middle"></span>
                 <span class="bar bottom"></span>
@@ -129,9 +130,9 @@
         <div class="page2 " id="portfolio">
 
 
-            <div id="filters" class="tooltip hidden fadeInLeft">
+            <div id="filters" class="tooltip none fadeInLeft">
 
-                <i class="fas fa-asterisk" data-filter="*"></i>
+                <i class="fas fa-asterisk active" data-filter="*"></i>
 
 
                 <i class="fas fa-camera" data-filter=".photos"></i>
@@ -290,6 +291,15 @@
                     </figure>
                 </a>
             </div>
+            <div class="text">
+                <h2>ABOUT
+                </h2>
+                <h2>ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi quis vel rerum dicta eius ut asperiores
+                    fuga dolores nobis dolore quam sunt, consequatur quibusdam voluptate porro nemo, aut debitis tempore
+                    minus non? Fugiat tempora rem error, nostrum dolorem, temporibus, deleniti illo excepturi asperiores
+                    eaque dolores doloribus cum sequi quaerat.</p>
+            </div>
         </div>
     </section>
     <!-- end of 3 ABOUT ME -->
@@ -388,12 +398,32 @@
             });
         }
     </script>
-    
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".section",
+                /*standardScrollElements: ".grid",*/
+                scrollSpeed: 650,
+                setHeights: false,
+
+
+
+
+            });
+        });
+    </script>
     <script>
         $('#filters').switchstyler({ //fixed object
             on: '.page2', //target section
             addClass: 'animated',
-            removeClass: 'hidden' //classes to remove
+            removeClass: 'none' //classes to remove
+        });
+    </script>
+    <script>
+        $('#circle').switchstyler({ //fixed object
+            on: '.page2', //target section
+            addClass: 'toggle-circle',
+            removeClass: '' //classes to remove
         });
     </script>
     <script>
@@ -418,18 +448,6 @@
 
         ]);
     </script>
-   <script>
-        $(function () {
-            $.scrollify({
-                section: ".section",
-                //standardScrollElements: ".grid",
-                scrollSpeed: 650,
-                setHeights: false,
-
-
-
-            });
-        });
     </script>
 </body>
 

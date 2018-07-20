@@ -34,7 +34,9 @@ body {
     width: 95%;
 }*/
 
-.hidden {
+.none {
+    height: 0%;
+    top: 0 !important;
     display: none;
     transition: 0.35s all ease;
 }
@@ -49,6 +51,10 @@ body {
     left: 1%;
     z-index: 9;
     transition: 0.35s all ease;
+}
+
+.tooltip .hidden {
+    height: 0%;
 }
 
 .tooltip:hover {
@@ -78,6 +84,11 @@ body {
     padding: 0;
     text-align: center;
     cursor: pointer;
+}
+
+i.active,
+i.active:hover {
+    color: #0d00ff;
 }
 
 /* ---- grid ---- */
@@ -206,3 +217,4 @@ body {
 .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
+}

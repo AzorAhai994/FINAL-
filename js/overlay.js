@@ -8,4 +8,7 @@ $('#overlay a').click(function () {
     $('#toggle').toggleClass('toggle-active');
     $('#overlay').toggleClass('nav-active');
 });
-$('#home')
+$('#filters i').click(function () {
+    $("i").removeClass('active');
+    $(this).toggleClass('active');
+})

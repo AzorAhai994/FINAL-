@@ -199,28 +199,15 @@
 	#deco {
 		opacity: 1;
 	}
-	.page1 {
-		min-height: 100vh;
+	.tooltip {
+
+			width: 14vw;
+			/* bottom: 0px; */
 		
 	}
-	.tooltip {
-		/* bottom: 0px; */
-		border-radius: 0px;
-		background: #AD1457;
-		width: 100vh;
-		height: 10%;
-		position: fixed;
-		bottom: 0px;
-		top: 90%;
-		left: 0%;
-		z-index: 9;
-		transition: 0.35s all ease;
-	}
-	.tooltip i {
-		font-weight: 900;
-		display: inline-block;
-		color: #ffffff;
-		margin: 2% 12px;
-		opacity: 0.55;
+	.tooltip i {}
+	.grid-sizer,
+	.grid-item {
+		width: 33.333333%;
 	}
 }
