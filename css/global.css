@@ -18,12 +18,11 @@ header {
 .page3 {
     min-height: 100vh;
 }
-/*
-.page1 {
+.page1,
+.page2 {
     @supports (-webkit-appearance: none) {
         .os-android & {
             min-height: calc(100vh - 56px);
         }
     }
 }
-*/
