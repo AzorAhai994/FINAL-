@@ -180,7 +180,7 @@
 	animation-name: fadeInLeft;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.parallaxTilt_hover {
 		width: 150px;
 		height: 150px;
