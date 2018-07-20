@@ -179,7 +179,7 @@
 	-webkit-animation-name: fadeInLeft;
 	animation-name: fadeInLeft;
 }
-/*
+
 @media (max-width: 480px) {
 	.parallaxTilt_hover {
 		width: 150px;
@@ -199,4 +199,8 @@
 	#deco {
 		opacity: 1;
 	}
+	.page1 {
+		min-height: 100vh;
+	}
+	
 }
