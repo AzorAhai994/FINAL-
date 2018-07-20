@@ -1,4 +1,4 @@
-/*var VHChromeFix = function(selectors) {
+var VHChromeFix = function(selectors) {
   var self = this;
   var userAgent = navigator.userAgent.toLowerCase();
   var isAndroidChrome = /chrome/.test(userAgent) && /android/.test(userAgent);
