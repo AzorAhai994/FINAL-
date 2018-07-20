@@ -205,5 +205,23 @@
 	}
 	.grid-sizer, .grid-item {
 		width: 33.3333%; }
-	
+		.tooltip {
+		bottom: 0;
+		/* border-radius: 38px; */
+		background: rgb(24, 23, 35);
+		width: 100vh;
+		height: 10%;
+		position: fixed;
+		/* top: 246px; */
+		/* left: 1%; */
+		z-index: 9;
+		transition: 0.35s all ease;
+	}
+	.tooltip i {
+		font-weight: 900;
+		/* display: block; */
+		color: #ffffff;
+		margin: 2% 12px;
+		opacity: 0.55;
+	}
 }
