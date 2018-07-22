@@ -1,21 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Questrial|Playfair+Display:400,
- 700);
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-
-.clearfix:after {
-  clear: both;
-}
+/*
 
 body {
   color: #333;
@@ -24,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
+*/
 
 a {
   outline: none;
@@ -32,6 +16,7 @@ a {
 }
 
 .mobile-note {
+  /* display: none;*/
   position: absolute;
   bottom: 1em;
   color: #fff;
@@ -45,51 +30,6 @@ a {
 }
 
 /* Header */
-
-.codrops-header {
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
-  background: url(../img/1.jpg) no-repeat center center;
-  background-size: auto 100vh;
-}
-
-.codrops-header h1 {
-  margin: 0.5em 0 0;
-  letter-spacing: -1px;
-  font-weight: 400;
-  font-size: 4.25em;
-  line-height: 1;
-  position: absolute;
-  width: 100%;
-  top: 25vh;
-  color: #fff;
-  pointer-events: none;
-  font-family: "Playfair Display", Georgia, serif;
-}
-
-.codrops-header h1 span {
-  display: block;
-  padding: 2em 0 1em;
-  color: #3a3231;
-  font-size: 0.2em;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-shadow: none;
-  font-family: "Questrial", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.github-link {
-  font-size: 0.95em;
-  position: absolute;
-  right: 60px;
-  top: 22px;
-}
-
-.github-link span {
-  margin: 0 0 0 5px;
-}
 
 .hero {
   width: 100vw;

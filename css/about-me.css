@@ -10,8 +10,8 @@
 	left: -350px;
 }
 
-.visible {
-	display: block;
+.none-mob {
+	display: none !important;
 }
 
 .contain a {
@@ -180,12 +180,43 @@
 	animation-name: fadeInLeft;
 }
 
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
 @media (max-width: 768px) {
 	.parallaxTilt_hover {
 		width: 150px;
 		height: 150px;
-		left: calc(66% - 100px);
-		top: calc(21% - 100px);
+		left: calc(50% - 100px);
+		top: calc(50% - 100px);
 	}
 	.tilter_figure .tilter_title {
 		font-size: 2em;
@@ -200,14 +231,81 @@
 		opacity: 1;
 	}
 	.tooltip {
-
-			width: 14vw;
-			/* bottom: 0px; */
-		
+		display: none;
 	}
-	.tooltip i {}
+	.tooltip i {
+		font-size: 1.7em;
+	}
 	.grid-sizer,
 	.grid-item {
 		width: 33.333333%;
+	}
+	.menu--adsila {
+		font-family: 'Nunito', sans-serif;
+		font-size: 2.15em;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.menu__item {
+		width: 100%;
+		line-height: 1;
+		position: relative;
+		display: inline-block;
+		margin: 0.3em 0;
+		outline: none;
+		text-align: center;
+	}
+	.middle {
+		height: 0.2em;
+	}
+	.toggle-button {
+		opacity: 0.6;
+		position: fixed;
+		padding: 9px 10px;
+		margin: 1px -5px 8px 0;
+	}
+	.hero__imgwrap .tilt__back,
+	.hero__imgwrap .tilt__front {
+		background-size: 105vw auto;
+		margin: -10% auto;
+	}
+	svg {
+		width: 60vw;
+		margin: 43% auto;
+		display: block;
+	}
+	.tooltip {
+		display: flex;
+		height: 10vh;
+		/*
+		border-radius: 0px; */
+		background: #ffffffc9;
+		position: fixed;
+		width: 100vw;
+		bottom: 0;
+		top: 89%;
+		left: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.tooltip.none {
+		display: none;
+	}
+	.filter-bar-filters {
+		position: relative;
+		/* z-index: 100; */
+		color: #2e2e2e;
+		display: inline-flex;
+		margin: 0 auto;
+		/* top: 0; */
+		/*left: 0;*/
+	}
+	.filter-bar-filters i {
+		display: inherit;
+		font-size: 2.7em;
+		margin: 2% 7px;
+		padding: 0;
+		text-align: center;
+		cursor: pointer;
 	}
 }
