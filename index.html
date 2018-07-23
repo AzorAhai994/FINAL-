@@ -8,8 +8,6 @@
     <title>Marinko Brdarević</title>
     <link rel="shortcut icon" href="img/icon.ico" />
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style-adsila.css" />
     <link type="text/css" rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/tilt.css">
@@ -85,12 +83,12 @@
             <section class="content">
                 <nav class="menu menu--adsila">
 
-                    <a class="menu__item" href="#home">
+                    <a class="menu__item" href="#homepage">
                         <span class="menu__item-name">HOME</span>
 
                     </a>
 
-                    <a class="menu__item" href="#portfolio">
+                    <a class="menu__item" href="#gallery">
                         <span class="menu__item-name">PORTFOLIO</span>
 
                     </a>
@@ -111,7 +109,7 @@
 
     <!-- 1 LANDING PAGE -->
     <section>
-        <div class="page1 section" id="home" data-section-name="page1">
+        <div class="page1 section" id="homepage" data-section-name="home">
 
 
             <div class="hero">
@@ -135,7 +133,7 @@
 
     <!-- 2 PORTFOLIO -->
     <section>
-        <div class="page2 section" id="portfolio" data-section-name="portfolio">
+        <div class="page2 section" id="gallery" data-section-name="portfolio">
 
             <div id="filters" class="tooltip none fadeInLeft">
                 <div class="filter-bar-filters">
@@ -534,7 +532,7 @@
     <script src="js/tiltfx.js"></script>
     <script src="js/overlay.js"></script>
     <script src="js/switchstyler.js"></script>
-    <script src="js/pulltorefresh.min.jss"></script>
+
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js">
     </script>
@@ -542,6 +540,7 @@
     <script src="js/parallaxTilt.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/jquery.scrollify.js"></script>
+
 
     <script>
         var $grid = $('.grid').isotope({
@@ -677,14 +676,7 @@
             removeClass: '' //classes to remove
         });
     </script>
-    <script>
-        var ptr = PullToRefresh.init({
-            mainElement: 'body',
-            onRefresh: function () {
-                window.location.reload();
-            }
-        });
-    </script>
+
     <script src="js/mobile-chrome-vh-fix.js"></script>
 
     <script>

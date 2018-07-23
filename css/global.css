@@ -303,13 +303,10 @@ a.demo--current {
     text-align: center;
     font-size: 50%;
     position: absolute;
-    /* top: 0; */
     left: 50%;
     width: 20%;
     margin-left: -10%;
-    /* margin-right: 50%; */
     bottom: -2%;
-    /* padding: 15px; */
     color: #fff;
     transform: translate(-50%, -50%);
 }
@@ -326,8 +323,6 @@ a.demo--current {
     margin-left: -10%;
     margin: 0 auto;
     width: 20%;
-}
-
 }
 
 /**********************************/
@@ -393,8 +388,6 @@ i.active:hover {
 }
 
 /* ---- grid ---- */
-
-.grid {}
 
 /* clear fix */
 
@@ -464,24 +457,16 @@ i.active:hover {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .txt {
     position: relative;
     line-height: 0.85;
     color: white;
-    /* display: inline-flex; */
-    /* align-items: baseline; */
-    /* align-content: center; */
-    /* float: right; */
-    /* margin: 56px 893px; */
-    /* text-align: center; */
 }
 
 .txt h2 {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: -112px; */
     margin: 0;
     font-size: 4em;
     padding: 0;
@@ -504,21 +489,10 @@ i.active:hover {
     top: calc(41% - 171.5px);
 }
 
-.page1,
-.page2 {
-    @supports (-webkit-appearance: none) {
-        .os-android & {
-            min-height: calc(100vh - 56px);
-        }
-    }
-}
-
 .contact {
     font-size: 3em;
     color: white;
     position: relative;
-    /* bottom: -1131px; */
-    /* left: 50%; */
     top: 88%;
     display: block;
 }
