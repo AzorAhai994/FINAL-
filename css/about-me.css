@@ -10,8 +10,19 @@
 	left: -350px;
 }
 
-.none-mob {
-	display: none !important;
+.contain {
+	text-align: left;
+	justify-content: center;
+	/* align-items: center; */
+	display: flex;
+	/* align-content: center; */
+	position: relative;
+	width: 100%;
+	height: 95%;
+	/* margin: 17% 0; */
+	padding: 0;
+	/* top: 61%; */
+	/* margin-top: -256px; */
 }
 
 .contain a {
@@ -34,20 +45,12 @@
 	text-decoration: none;
 }
 
-.contain {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
 .parallaxTilt_hover {
 	position: absolute;
-	width: 325px;
-	height: 325px;
-	left: calc(50% - 200px);
-	top: calc(50% - 200px);
+	width: 343px;
+	height: 343px;
+	left: calc(36% - 171.5px);
+	top: calc(41% - 171.5px);
 }
 
 .tilter_figure {
@@ -56,6 +59,13 @@
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+#txt {
+	top: 36px;
+	left: 123%;
+	right: 0;
+	transition: 0.35s all ease-in-out;
 }
 
 .tilter_image,
@@ -96,6 +106,15 @@
 	left: -100px;
 	bottom: 12px;
 	text-align: left;
+}
+
+.txt h2 {
+	position: absolute;
+	top: -101px;
+	left: -191px;
+	margin: 0;
+	font-size: 1em;
+	padding: 0;
 }
 
 #tag {
@@ -212,16 +231,23 @@
 }
 
 @media (max-width: 768px) {
+	.scroll {
+		bottom: 11%;
+	}
 	.parallaxTilt_hover {
-		width: 150px;
-		height: 150px;
-		left: calc(50% - 100px);
+		width: 200px;
+		height: 200px;
+		left: calc(53% - 100px);
 		top: calc(50% - 100px);
 	}
 	.tilter_figure .tilter_title {
 		font-size: 2em;
 		left: -70px;
-		top: 51px;
+		top: 108px;
+	}
+	.tilter_caption {
+		top: 50px;
+		left: 49px;
 	}
 	.tilter_figure .tilter_tag {
 		left: -69px;
@@ -229,6 +255,25 @@
 	}
 	#deco {
 		opacity: 1;
+	}
+	#txt {
+		font-size: 0.35em;
+		top: 27px;
+		left: 149%;
+		right: 0;
+		transition: 0.35s all ease-in-out;
+	}
+	.about {
+		position: absolute;
+		left: 4px;
+	}
+	.txt h2 {
+		position: absolute;
+		top: -101px;
+		left: -191px;
+		margin: 0;
+		font-size: 3em;
+		padding: 0;
 	}
 	.tooltip {
 		display: none;
@@ -277,8 +322,7 @@
 	.tooltip {
 		display: flex;
 		height: 10vh;
-		/*
-		border-radius: 0px; */
+		border-radius: 0px;
 		background: #ffffffc9;
 		position: fixed;
 		width: 100vw;
@@ -307,5 +351,114 @@
 		padding: 0;
 		text-align: center;
 		cursor: pointer;
+	}
+	.contain {
+		height: 75%;
+	}
+	.contact {
+		top: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.tooltip {
+		height: 17vh;
+		border-radius: 0px;
+		/* background: #ffffffc9; */
+		position: fixed;
+		/* width: 100vw; */
+		/* bottom: 0; */
+		top: 81%;
+	}
+	.hero__imgwrap .tilt__back,
+	.hero__imgwrap .tilt__front {
+		background-size: 60vw auto;
+		margin: 0 auto;
+	}
+	.menu--adsila {
+		margin: -30px auto;
+		font-size: 1.6em;
+	}
+	.contain {
+		/* text-align: left; */
+		justify-content: center;
+		/* align-items: stretch; */
+		display: flex;
+		/* align-content: center; */
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: 20% 0;
+		padding: 0;
+	}
+	.contact {
+		top: 4%;
+		left: 20%;
+	}
+	.parallaxTilt_hover {
+		width: 200px;
+		height: 200px;
+		left: calc(26% - 100px);
+		top: calc(7% - 100px);
+	}
+	.txt {
+		position: relative;
+		line-height: 0.85;
+		color: white;
+		/* display: inline-flex; */
+		/* align-items: baseline; */
+		/* align-content: center; */
+		/* float: right; */
+		/* margin: 56px 893px; */
+		/* text-align: center; */
+		top: -76px;
+		left: 111px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.tooltip {
+		top: 50%;
+		margin-top: -197.85px;
+	}
+	.parallaxTilt_hover {
+		position: absolute;
+		width: 512px;
+		height: 512px;
+		left: calc(50% - 256px);
+		top: calc(50% - 256px);
+	}
+	.tilter_caption {
+		top: 107px;
+	}
+	.tilter_figure .tilter_title {
+		text-shadow: rgba(0, 0, 0, 0.65) 1px 1px 13px;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+		font-size: 4em;
+		position: absolute;
+		left: -107px;
+		bottom: 60px;
+	}
+	.tilter_figure .tilter_tag {
+		display: inline-block;
+		padding: 12px 12px 12px 0;
+		margin: 0;
+		position: absolute;
+		left: -100px;
+		bottom: -10px;
+		text-align: left;
+	}
+	.tilter_figure .tilter_tag span {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	.contain {
+		transform: scale(0.8);
+	}
+	.contact {
+		top: 102%;
 	}
 }

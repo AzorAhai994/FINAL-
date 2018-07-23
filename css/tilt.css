@@ -16,7 +16,7 @@ a {
 }
 
 .mobile-note {
-  /* display: none;*/
+  display: none;
   position: absolute;
   bottom: 1em;
   color: #fff;
@@ -75,6 +75,7 @@ a {
   background-size: 52vw auto;
 }
 
+/*
 @media screen and (min-aspect-ratio: 1440/960) {
   .hero__imgwrap .tilt__back,
   .hero__imgwrap .tilt__front,

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lightbox.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
 
@@ -117,20 +117,24 @@
             <div class="hero">
                 <div class="hero__imgwrap">
 
-                    <img class="hero__img tilt-effect cvet" data-tilt-options='{ "extraImgs" : 4, "opacity" : 0.5, "bgfixed" : false, "resetOnLeave" : false, "movement": { "perspective" : 600, "translateX" : -15, "translateY" : -15, "translateZ" : 20, "rotateX" : 15, "rotateY" : 15 } }'
+                    <img class="hero__img tilt-effect" data-tilt-options='{ "extraImgs" : 4, "opacity" : 0.5, "bgfixed" : false, "resetOnLeave" : false, "movement": { "perspective" : 600, "translateX" : -15, "translateY" : -15, "translateZ" : 20, "rotateX" : 15, "rotateY" : 15 } }'
                         src="img/d3-2.svg" alt="Hero image" />
                 </div>
-
+                <div class="scroll-indicator">
+                    <p class="scroll">Scroll</p>
+                    <div class="arrow bounce animated infinite">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!-- <i class="fas fa-chevron-down"></i> -->
             </div>
+        </div>
         </div>
     </section>
     <!-- end of 1 LANDING PAGE -->
 
     <!-- 2 PORTFOLIO -->
     <section>
-
-
-
         <div class="page2 section" id="portfolio" data-section-name="portfolio">
 
             <div id="filters" class="tooltip none fadeInLeft">
@@ -470,17 +474,6 @@
             </div>
 
         </div>
-        <!--
-        <div id="filter-bar" class="filter-bar fadeInUp none-mob">
-            <div class="filter-bar-filters">
-                <i class="fas fa-asterisk active" data-filter="*"></i>
-                <i class="fas fa-camera" data-filter=".photos"></i>
-                <i class="fas fa-palette" data-filter=".logos"></i>
-                <i class="fas fa-tshirt"></i>
-                <i class="fas fa-circle-notch"></i>
-            </div>
-        </div> -->
-
     </section>
     <!-- end of 2 PORTFOLIO -->
 
@@ -490,32 +483,45 @@
 
 
         <div id="about-me" class="page3 section" data-section-name="about--me">
+
             <div class="contain">
-                <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover animated fadeInLeft">
-                    <figure class="tilter_figure">
-                        <img class="tilter_image" src="img/img_2.jpg" alt="dive" />
-                        <div id="deco" class="tilter_deco">
-                            <img class="tilter_image" src="img/img_1.png" alt="dive" />
-                        </div>
-                        <figcaption class="tilter_caption">
-                            <h3 class="tilter_title">Marinko Brdarević</h3>
-                            <p id="tag" class="tilter_tag">
-                                <span>Web designer / developer</span>
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
+                <div class="cont">
+                    <a href="imgs/files/resume.pdf" id="work" class="parallaxTilt_hover fadeInLeft">
+                        <figure class="tilter_figure">
+                            <img class="tilter_image" src="img/img_2.jpg" alt="dive" />
+                            <div id="deco" class="tilter_deco">
+                                <img class="tilter_image" src="img/img_1.png" alt="dive" />
+                            </div>
+                            <figcaption class="tilter_caption">
+                                <h3 class="tilter_title">Marinko
+                                    <br>Brdarević</h3>
+                                <div id="txt" class="txt tilter_title">
+                                    <h2>
+                                        <span class="about">ABOUT</span>
+                                        <br>
+                                        <span class="me">ME</span>
+                                    </h2>
+                                </div>
+                                <p id="tag" class="tilter_tag">
+                                    <span>Web designer / developer</span>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/azor___ahai/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="​mailto:marinko.brdarevic@gmail.com?Subject=Contact" target="_blank">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://rs.linkedin.com/in/marinko-brdarevi%C4%87-108373131" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
-            <div class="text">
-                <h2>ABOUT
-                </h2>
-                <h2>ME</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi quis vel rerum dicta eius ut asperiores
-                    fuga dolores nobis dolore quam sunt, consequatur quibusdam voluptate porro nemo, aut debitis tempore
-                    minus non? Fugiat tempora rem error, nostrum dolorem, temporibus, deleniti illo excepturi asperiores
-                    eaque dolores doloribus cum sequi quaerat.</p>
-            </div>
-        </div>
 
     </section>
     <!-- end of 3 ABOUT ME -->
@@ -580,11 +586,12 @@
             //      easing:'easeOutExpo'
 
             $('.tilter_image').parallaxTilt({
-                parallaxMultiple: .18,
+                parallaxMultiple: 0.10,
+
 
             });
             $('.tilter_deco').parallaxTilt({
-                parallaxMultiple: .05
+                parallaxMultiple: .005
             });
             $('.tilter_caption').parallaxTilt({
                 parallaxMultiple: -(0.08)
@@ -619,6 +626,18 @@
     </script>
     <script>
         $(function () {
+            $('#work').hover(function () {
+                $('#txt').css('opacity', '0');
+
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#txt').css('opacity', '1');
+
+            });
+        });
+    </script>
+    <script>
+        $(function () {
             $.scrollify({
                 section: ".section",
                 //standardScrollElements: ".page2",
@@ -650,11 +669,12 @@
             removeClass: '' //classes to remove
         });
     </script>
+
     <script>
-        $('#filter-bar').switchstyler({ //fixed object
-            on: '.page2', //target section
+        $('#work').switchstyler({ //fixed object
+            on: '.page3', //target section
             addClass: 'animated',
-            removeClass: 'none-mob' //classes to remove
+            removeClass: '' //classes to remove
         });
     </script>
     <script>
