@@ -36,7 +36,7 @@ a {
 .hero__imgwrap::after {
   content: "";
   position: absolute;
-  background: rgba(76, 0, 1, 0.1);
+  /*background: rgba(76, 0, 1, 0.1);*/
   top: 0;
   left: 0;
   width: 100%;
