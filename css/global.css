@@ -28,7 +28,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #000F16;
+    background-color: #131417;
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -38,16 +38,21 @@ body {
 
 svg {
     width: 13vw;
-    margin: 39vh auto;
     display: block;
 }
 
 .container {
-    z-index: 10000;
+    z-index: 100000000000;
     position: fixed;
-    background-color: #14171a;
-    width: 100%;
+    background-color: #131417;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    /* scroll-behavior: unset; */
 }
 
 .outer {
@@ -57,6 +62,19 @@ svg {
     animation: dash 4.5s linear infinite;
     filter: url(#glow);
 }
+
+.outer--2 {
+    fill-opacity: 0;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 100;
+    filter: url(#glow);
+}
+
+.phone .outer--2 {
+    animation: dash--2 4.5s linear infinite;
+}
+
+
 
 .out {
     fill-opacity: 0;
@@ -72,6 +90,10 @@ svg {
     stroke-dashoffset: 50;
     animation: dash 5.5s linear infinite;
     filter: url(#glow);
+}
+
+.phone .inner {
+    stroke: none;
 }
 
 .ptr--box {
@@ -99,6 +121,16 @@ svg {
 @keyframes dash {
     from {
         stroke-dashoffset: 4500;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash--2 {
+    from {
+        stroke-dashoffset: 5000;
     }
 
     to {
@@ -332,6 +364,7 @@ a.demo--current {
 
 .page2 {
     min-height: 100vh;
+
 }
 
 .none {

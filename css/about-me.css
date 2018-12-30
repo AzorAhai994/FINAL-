@@ -145,6 +145,7 @@
 		transform: translate3d(-100%, 0, 0);
 		visibility: visible;
 	}
+
 	to {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
@@ -157,6 +158,7 @@
 		transform: translate3d(-100%, 0, 0);
 		visibility: visible;
 	}
+
 	to {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
@@ -174,6 +176,7 @@
 		-webkit-transform: translate3d(-100%, 0, 0);
 		transform: translate3d(-100%, 0, 0);
 	}
+
 	to {
 		opacity: 1;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -187,6 +190,7 @@
 		-webkit-transform: translate3d(-100%, 0, 0);
 		transform: translate3d(-100%, 0, 0);
 	}
+
 	to {
 		opacity: 1;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -205,6 +209,7 @@
 		-webkit-transform: translate3d(0, 100%, 0);
 		transform: translate3d(0, 100%, 0);
 	}
+
 	to {
 		opacity: 1;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -218,6 +223,7 @@
 		-webkit-transform: translate3d(0, 100%, 0);
 		transform: translate3d(0, 100%, 0);
 	}
+
 	to {
 		opacity: 1;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -230,32 +236,42 @@
 	animation-name: fadeInUp;
 }
 
+#Layer_1 {
+	display: block !important;
+}
+
 @media (max-width: 768px) {
 	.scroll {
 		bottom: 11%;
 	}
+
 	.parallaxTilt_hover {
 		width: 200px;
 		height: 200px;
 		left: calc(53% - 100px);
 		top: calc(50% - 100px);
 	}
+
 	.tilter_figure .tilter_title {
 		font-size: 2em;
 		left: -70px;
 		top: 108px;
 	}
+
 	.tilter_caption {
 		top: 50px;
 		left: 49px;
 	}
+
 	.tilter_figure .tilter_tag {
 		left: -69px;
 		bottom: -30px;
 	}
+
 	#deco {
 		opacity: 1;
 	}
+
 	#txt {
 		font-size: 0.35em;
 		top: 27px;
@@ -263,10 +279,12 @@
 		right: 0;
 		transition: 0.35s all ease-in-out;
 	}
+
 	.about {
 		position: absolute;
 		left: 4px;
 	}
+
 	.txt h2 {
 		position: absolute;
 		top: -101px;
@@ -275,22 +293,27 @@
 		font-size: 3em;
 		padding: 0;
 	}
+
 	.tooltip {
 		display: none;
 	}
+
 	.tooltip i {
 		font-size: 1.7em;
 	}
+
 	.grid-sizer,
 	.grid-item {
 		width: 33.333333%;
 	}
+
 	.menu--adsila {
 		font-family: 'Nunito', sans-serif;
 		font-size: 2.15em;
 		text-align: center;
 		margin: 0 auto;
 	}
+
 	.menu__item {
 		width: 100%;
 		line-height: 1;
@@ -300,25 +323,46 @@
 		outline: none;
 		text-align: center;
 	}
+
 	.middle {
 		height: 0.2em;
 	}
+
 	.toggle-button {
 		opacity: 0.6;
 		position: fixed;
 		padding: 9px 10px;
 		margin: 1px -5px 8px 0;
 	}
+
 	.hero__imgwrap .tilt__back,
 	.hero__imgwrap .tilt__front {
 		background-size: 105vw auto;
 		margin: -10% auto;
 	}
+
 	svg {
 		width: 60vw;
 		margin: 43% auto;
-		display: block;
+		/*display: block;*/
 	}
+
+	.desktop {
+		display: none !important;
+	}
+
+	.phone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+		background: #131417;
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		z-index: 9999;
+	}
+
 	.tooltip {
 		display: flex;
 		height: 10vh;
@@ -332,9 +376,11 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
 	.tooltip.none {
 		display: none;
 	}
+
 	.filter-bar-filters {
 		position: relative;
 		/* z-index: 100; */
@@ -344,6 +390,7 @@
 		/* top: 0; */
 		/*left: 0;*/
 	}
+
 	.filter-bar-filters i {
 		display: inherit;
 		font-size: 2.7em;
@@ -352,15 +399,19 @@
 		text-align: center;
 		cursor: pointer;
 	}
+
 	.contain {
 		height: 75%;
 	}
+
 	.contact {
 		top: 100%;
 	}
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+
+
 	.tooltip {
 		height: 17vh;
 		border-radius: 0px;
@@ -370,15 +421,18 @@
 		/* bottom: 0; */
 		top: 81%;
 	}
+
 	.hero__imgwrap .tilt__back,
 	.hero__imgwrap .tilt__front {
 		background-size: 60vw auto;
 		margin: 0 auto;
 	}
+
 	.menu--adsila {
 		margin: -30px auto;
 		font-size: 1.6em;
 	}
+
 	.contain {
 		/* text-align: left; */
 		justify-content: center;
@@ -391,16 +445,19 @@
 		margin: 20% 0;
 		padding: 0;
 	}
+
 	.contact {
 		top: 4%;
 		left: 20%;
 	}
+
 	.parallaxTilt_hover {
 		width: 200px;
 		height: 200px;
 		left: calc(26% - 100px);
 		top: calc(7% - 100px);
 	}
+
 	.txt {
 		position: relative;
 		line-height: 0.85;
@@ -416,11 +473,21 @@
 	}
 }
 
+/*
+@media screen and (min-width: 769px) {
+	.phone {
+		display: none;
+	}
+
+
+} */
+
 @media screen and (min-width: 1200px) {
 	.tooltip {
 		top: 50%;
 		margin-top: -197.85px;
 	}
+
 	.parallaxTilt_hover {
 		position: absolute;
 		width: 512px;
@@ -428,9 +495,11 @@
 		left: calc(50% - 256px);
 		top: calc(50% - 256px);
 	}
+
 	.tilter_caption {
 		top: 107px;
 	}
+
 	.tilter_figure .tilter_title {
 		text-shadow: rgba(0, 0, 0, 0.65) 1px 1px 13px;
 		display: inline-block;
@@ -442,6 +511,7 @@
 		left: -107px;
 		bottom: 60px;
 	}
+
 	.tilter_figure .tilter_tag {
 		display: inline-block;
 		padding: 12px 12px 12px 0;
@@ -451,13 +521,16 @@
 		bottom: -10px;
 		text-align: left;
 	}
+
 	.tilter_figure .tilter_tag span {
 		font-size: 2em;
 		font-weight: bold;
 	}
+
 	.contain {
 		transform: scale(0.8);
 	}
+
 	.contact {
 		top: 102%;
 	}

@@ -54,46 +54,80 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W72S5M9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 0 PRELOADER -->
+
     <div class="container">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-            <g>
-                <defs>
-                    <filter id="glow">
-                        <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
-                        <femerge>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
-                    </filter>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:rgb(78, 0, 204);stop-opacity:1" />
-                    </linearGradient>
-                </defs>
+        <div class="phone">
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
-                    <path class="outer" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);"
-                        d="M256.2,87.2l203.4,337.7H52.3L256.2,87.2">
+                    <defs>
+                        <filter id="glow">
+                            <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                            <femerge>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="SourceGraphic"></femergenode>
+                            </femerge>
+                        </filter>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(78, 0, 204);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
 
-                    </path>
+                    <g>
+                        <path class="outer--2" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);"
+                            d="M441.5,311.1H70.5l104.1-172.4L256,273.6l81.4-134.9L441.5,311.1z">
+
+                        </path>
+                    </g>
                 </g>
+            </svg>
+        </div>
+        <div class="desktop">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
-                    <path class="inner" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);"
-                        d="M256.2,183.6l116.1,192.8H139.8L256.2,183.6">
-                    </path>
+                    <defs>
+                        <filter id="glow">
+                            <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                            <femerge>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="SourceGraphic"></femergenode>
+                            </femerge>
+                        </filter>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00c3ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(78, 0, 204);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <g>
+                        <path class="outer" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);"
+                            d="M256.2,87.2l203.4,337.7H52.3L256.2,87.2">
+
+                        </path>
+                    </g>
+                    <g>
+                        <path class="inner" style="fill-opacity: 0; stroke-width: 2; stroke: url(#grad1); filter: url(#glow);"
+                            d="M256.2,183.6l116.1,192.8H139.8L256.2,183.6">
+                        </path>
+                    </g>
                 </g>
-            </g>
-        </svg>
+            </svg>
+        </div>
+
     </div>
-    <script>
+    <!--  <script>
         var overlay = document.querySelector('.container');
-
+        var phoneOverlay = document.querySelector('.phone');
         window.addEventListener('load', function () {
             overlay.style.display = 'none';
+            phoneOverlay.style.display = 'none';
         })
-    </script>
+    </script> -->
     <!-- end of 0 PRELOADER -->
 
     <!-- 0.5 NAVIGATION MENU -->
