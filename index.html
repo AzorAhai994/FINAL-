@@ -683,6 +683,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         $(window).on("load", (function () {
             var $container = $('.grid');
+            $.scrollify.update();
+            console.log("loaded page");
         }));
 
         // layout Isotope after each image loads
@@ -697,6 +699,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 filter: selector
             });
             return false;
+            $.scrollify.update();
+            console.log("filtered!");
         });
     </script>
     <script type="text/javascript">
@@ -808,7 +812,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 //interstitialSection: ".grid--sect",
                 scrollSpeed: 650,
                 touchScroll: false,
-                setHeights: true,
+                setHeights: false,
  });
         });
     </script>
