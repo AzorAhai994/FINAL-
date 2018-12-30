@@ -632,7 +632,7 @@ if touchScroll is false - update index
             } else {
 
               $this.css({
-                "height": $this.height()
+                "height": $this.outerHeight()
               });
 
               if (settings.overflowScroll) {
