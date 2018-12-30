@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              phoneOverlay.style.display = 'none'; */
             setTimeout(function () {
                 $('.container').fadeOut('slow', function () {});
-            }, 2000);
+            }, 1500);
         })
     </script>
     <!-- end of 0 PRELOADER -->
@@ -175,9 +175,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- 1 LANDING PAGE -->
     <section>
         <div class="page1 section" id="homepage" data-section-name="home">
+            <div id="landing--container" class="landing--container"></div>
+            <div id="scene" class="scene">
+
+                <div data-depth="1.00" class="itm">
+                    <img src="img/d3-2.png">
+                </div>
+                <div data-depth="0.80" class="itm">
+                    <img src="img/d3-2.png">
+                </div>
+
+                <div data-depth="0.60" class="itm">
+                    <img src="img/d3-2.png">
+                </div>
+                <div data-depth="0.40" class="itm">
+                    <img src="img/d3-2.png">
+                </div>
+                <div data-depth="0.20" class="itm">
+                    <img src="img/d3-2.png">
+                </div>
 
 
-            <div class="hero">
+
+
+            </div>
+            <div class="scroll-indicator">
+                <p class="scroll">Scroll</p>
+                <div class="arrow bounce animated infinite">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="hero">
                 <div class="hero__imgwrap">
 
                     <img class="hero__img tilt-effect" data-tilt-options='{ "extraImgs" : 4, "opacity" : 0.5, "bgfixed" : false, "resetOnLeave" : false, "movement": { "perspective" : 600, "translateX" : -15, "translateY" : -15, "translateZ" : 20, "rotateX" : 15, "rotateY" : 15 } }'
@@ -189,8 +219,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
-                <!-- <i class="fas fa-chevron-down"></i> -->
-            </div>
+                <!-- <i class="fas fa-chevron-down"></i>
+        </div> -->
         </div>
         </div>
     </section>
@@ -202,14 +232,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div id="filters" class="tooltip none fadeInLeft">
                 <div class="filter-bar-filters">
-                    <i class="fas fa-asterisk active" data-filter="*"></i>
+                    <i class="fas fa-asterisk active" data-filter="*">
+                        <span>
+                            <p>ALL</p>
+                        </span>
+                    </i>
 
 
-                    <i class="fas fa-camera" data-filter=".photos"></i>
+                    <i class="fas fa-camera" data-filter=".photos"><span>
+                            <p>PHOTOS</p>
+                        </span></i>
 
-                    <i class="fas fa-palette" data-filter=".logos"></i>
-                    <i class="fas fa-tshirt" data-filter=".t-shirts"></i>
-                    <i class="fas fa-circle-notch" data-filter=".other"></i>
+                    <i class="fas fa-palette" data-filter=".logos">
+                        <span>
+                            <p>LOGOS</p>
+                        </span>
+                    </i>
+                    <i class="fas fa-tshirt" data-filter=".t-shirts"><span>
+                            <p>T-SHIRTS</p>
+                        </span></i>
+                    <i class="fas fa-circle-notch" data-filter=".other"><span>
+                            <p>OTHER</p>
+                        </span></i>
                 </div>
 
             </div>
@@ -623,6 +667,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script>
         var $grid = $('.grid').isotope({
             sortBy: 'random',
+            /* stagger: 20,
+            transitionDuration: '0.35s', */
             itemSelector: '.grid-item',
             layoutMode: 'packery',
 
@@ -815,6 +861,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         });
     </script> -->
+    <script src="js/parallax.js"></script>
+    <script>
+        // Pretty simple huh?
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene, {
+            invertX: true,
+
+            calibrateX: true,
+            frictionX: 0.075,
+            frictionY: 0.075,
+            limitX: true,
+            scalarX: 10,
+            scalarY: 10,
+        });
+    </script>
 </body>
 
 </html>

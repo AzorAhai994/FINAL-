@@ -302,6 +302,10 @@
 		font-size: 1.7em;
 	}
 
+	i:hover span p {
+		display: none;
+	}
+
 	.grid-sizer,
 	.grid-item {
 		width: 33.333333%;
@@ -421,6 +425,8 @@
 		/* bottom: 0; */
 		top: 81%;
 	}
+
+
 
 	.hero__imgwrap .tilt__back,
 	.hero__imgwrap .tilt__front {
