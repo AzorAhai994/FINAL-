@@ -28,7 +28,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #131417;
+    background-color: #000F16;
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -100,6 +100,7 @@ svg {
     from {
         stroke-dashoffset: 4500;
     }
+
     to {
         stroke-dashoffset: 0;
     }
@@ -197,7 +198,7 @@ main {
     pointer-events: none;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto 4em;
-    grid-template-areas: 'header ...' '... ...' 'github demos';
+    grid-template-areas: 'header ...''... ...''github demos';
 }
 
 .content--fixed a {

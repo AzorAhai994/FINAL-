@@ -15,7 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Marinko Brdarević</title>
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="img/icon.png">
-    <meta name="theme-color" content="#191215"/>
+    <meta name="theme-color" content="#191215" />
     <link rel="shortcut icon" href="img/icon.ico" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/style-adsila.css" />
@@ -46,7 +46,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ga('send', 'pageview', '/#portfolio');
         ga('send', 'pageview', '/#about--me');
     </script>
-<script src="js/modernizr-custom.js"></script>
+    <script src="js/modernizr-custom.js"></script>
 </head>
 
 <body>
@@ -183,7 +183,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
                 <a href="img/l/img_01.jpg" data-lightbox="image" data-title="Tiny planet ver. 3 [🌍☀🏖🕶] ">
                     <div class="grid-item photos" data-category="photos">
-                        <img id="myimg" src="img/img_01.jpg" data-webp="img/img_01.webp" title="Tiny planet ver. 3 [ 🌍☀🏖🕶 ]" alt="Tiny planet ver. 3">
+                        <img id="myimg" src="img/img_01.jpg" data-webp="img/img_01.webp" title="Tiny planet ver. 3 [ 🌍☀🏖🕶 ]"
+                            alt="Tiny planet ver. 3">
                     </div>
                 </a>
 
@@ -738,32 +739,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         })
     </script>
 
-    <script> /*
-Modernizr.on('webp', function (result) {
+    <script>
+        Modernizr.on('webp', function (result) {
 
 
-  var a = document.getElementById('gallery').getElementsByTagName('a');
-  var thumbnail = document.getElementById('gallery').getElementsByTagName("img");
-  var duzina = a.length;
-  var imgLenght = thumbnail.length;
+            var a = document.getElementById('gallery').getElementsByTagName('a');
+            var thumbnail = document.getElementById('gallery').getElementsByTagName("img");
+            var duzina = a.length;
+            var imgLenght = thumbnail.length;
 
 
-  if (result) {
-console.log(imgLenght);
-for(var i=0; i<duzina; i++){
+            if (result) {
+                console.log(imgLenght);
+                for (var i = 0; i < duzina; i++) {
 
-    a[i].href = '/img/l/webp/img_' + [i+1] + '.webp';
+                    a[i].href = 'img/webp/l/img_' + [i + 1] + '.webp';
 
-}
+                }
 
-for (let j = 0; j < imgLenght; j++) {
-    thumbnail[j].src ='img/webp/img_' + [j+1] + '.webp';
+                for (let j = 0; j < imgLenght; j++) {
+                    thumbnail[j].src = 'img/webp/img_' + [j + 1] + '.webp';
 
-}
+                }
 
-  }
+            }
 
-});*/
+        });
     </script>
 
 </body>
