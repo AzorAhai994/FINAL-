@@ -591,6 +591,7 @@ i:hover span p {
 
 .landing--container {
     height: 100vh;
+    overflow: hidden;
 }
 
 .container--offset {
