@@ -347,9 +347,9 @@
 		/*display: block;*/
 	}
 
-	.desktop {
+	/* .desktop {
 		display: none !important;
-	}
+	} */
 
 	.phone {
 		display: flex;

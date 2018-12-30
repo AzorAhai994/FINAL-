@@ -85,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </g>
             </svg>
         </div>
-        <div class="desktop">
+        <!-- <div class="desktop">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
@@ -117,17 +117,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </g>
                 </g>
             </svg>
-        </div>
+        </div> -->
 
     </div>
-    <!--  <script>
+    <script>
         var overlay = document.querySelector('.container');
         var phoneOverlay = document.querySelector('.phone');
         window.addEventListener('load', function () {
             overlay.style.display = 'none';
             phoneOverlay.style.display = 'none';
         })
-    </script> -->
+    </script>
     <!-- end of 0 PRELOADER -->
 
     <!-- 0.5 NAVIGATION MENU -->
@@ -800,7 +800,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         });
     </script>
+    <!--  <script>
+        $(window).resize(function () {
+            if (window.innerWidth > 768) {
 
+                $(".container").remove(".phone");
+                console.log("tets");
+
+            }
+        });
+    </script> -->
 </body>
 
 </html>
