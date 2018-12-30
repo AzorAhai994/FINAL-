@@ -124,8 +124,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         var overlay = document.querySelector('.container');
         var phoneOverlay = document.querySelector('.phone');
         window.addEventListener('load', function () {
-            overlay.style.display = 'none';
-            phoneOverlay.style.display = 'none';
+            /*  overlay.style.display = 'none';
+             phoneOverlay.style.display = 'none'; */
+            setTimeout(function () {
+                $('.container').fadeOut('slow', function () {});
+            }, 2000);
         })
     </script>
     <!-- end of 0 PRELOADER -->
@@ -702,11 +705,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         $(function () {
             $('#work').hover(function () {
                 $('#txt').css('opacity', '0');
+                $('#deco').css('opacity', '0.5');
+                /*  $('body').css('background-color', '#000b16'); */
 
             }, function () {
                 // on mouseout, reset the background colour
                 $('#txt').css('opacity', '1');
-
+                /*  $('body').css('background-color', '#000f16'); */
             });
         });
     </script>
@@ -756,7 +761,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 //interstitialSection: ".grid--sect",
                 scrollSpeed: 650,
-                touchScroll: false,
+                touchScroll: true,
                 setHeights: false,
 
 
