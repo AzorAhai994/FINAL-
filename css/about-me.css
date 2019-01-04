@@ -17,8 +17,8 @@
 	display: flex;
 	/* align-content: center; */
 	position: relative;
-	width: 100%;
-	height: 95%;
+	/* width: 100%; */
+	/* height: 94%; */
 	/* margin: 17% 0; */
 	padding: 0;
 	/* top: 61%; */
@@ -246,16 +246,16 @@
 	}
 
 	.parallaxTilt_hover {
-		width: 200px;
-		height: 200px;
-		left: calc(53% - 100px);
-		top: calc(50% - 100px);
+		width: 250px;
+		height: 250px;
+		left: calc(53% - 125px);
+		/* top: calc(50% - 100px); */
 	}
 
 	.tilter_figure .tilter_title {
 		font-size: 2em;
 		left: -70px;
-		top: 108px;
+		top: 248px;
 	}
 
 	.tilter_caption {
@@ -405,11 +405,17 @@
 	}
 
 	.contain {
-		height: 75%;
+		/* height: 96%; */
 	}
 
 	.contact {
 		top: 100%;
+	}
+}
+
+@media (max-width:480px) {
+	.txt {
+		display: none !important;
 	}
 }
 
@@ -538,6 +544,6 @@
 	}
 
 	.contact {
-		top: 102%;
+		/* top: 102%; */
 	}
 }

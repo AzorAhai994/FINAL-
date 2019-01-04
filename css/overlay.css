@@ -12,7 +12,7 @@
 }
 
 .toggle-button::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -27,7 +27,7 @@
 
 .toggle-circle {
     z-index: -1;
-    background: #3F51B5;
+    background: #542cff;
     height: 43px;
     width: 43px;
     border-radius: 150px;
@@ -44,8 +44,8 @@
     width: 100%;
     height: 3px;
     border: 0;
-    -webkit-transition: all .35s ease;
-    transition: all .35s ease;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 
 .bar+.bar {
@@ -63,7 +63,7 @@
 }
 
 .toggle-button:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 .toggle-active .bar {
@@ -93,7 +93,7 @@
     height: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
 }
 
 .nav-active {
@@ -105,11 +105,11 @@
 
 .overlay ul {
     display: block;
-    position: relative;
-    top: 60px;
+    /* position: relative; */
+    /* top: 60px; */
     left: 0;
-    font-size: 50px;
-    font-weight: 400;
+    /* font-size: 50px; */
+    font-weight: 900;
     text-align: center;
     list-style: none;
     padding: 0;
@@ -122,4 +122,14 @@
 .overlay ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.active--nav {
+    color: green;
+}
+
+@media (max-width: 400px) {
+    .overlay ul {
+        font-size: 50px;
+    }
 }
