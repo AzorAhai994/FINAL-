@@ -648,8 +648,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img class="tilter_image" src="img/img_1.png" alt="dive" />
                             </div>
                             <figcaption class="tilter_caption">
-                                <h3 class="tilter_title">Marinko
-                                    <br>Brdarević</h3>
+                                <h3 class="tilter_title">Marinko Brdarević</h3>
                                 <div id="txt" class="txt tilter_title">
                                     <h2>
                                         <span class="about">ABOUT</span>
@@ -681,12 +680,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
     <!-- end of 3 ABOUT ME -->
     <!-- 4 CONTACT -->
-    <section>
-        <div id="contact" class="get-in-touch page4 section" data-section-name="contact">
+    <section class="section--4">
+        <div class="box">
+            <div class="box--content">
+                <!--  <h1>test</h1> -->
+                <svg id="successAnimation" class="animated" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                    viewBox="0 0 70 70">
+                    <path id="successAnimationResult" fill="#D8D8D8" d="M35,60 C21.1928813,60 10,48.8071187 10,35 C10,21.1928813 21.1928813,10 35,10 C48.8071187,10 60,21.1928813 60,35 C60,48.8071187 48.8071187,60 35,60 Z M23.6332378,33.2260427 L22.3667622,34.7739573 L34.1433655,44.40936 L47.776114,27.6305926 L46.223886,26.3694074 L33.8566345,41.59064 L23.6332378,33.2260427 Z" />
+                    <circle id="successAnimationCircle" cx="35" cy="35" r="24" stroke="#979797" stroke-width="2"
+                        stroke-linecap="round" fill="transparent" />
+                    <polyline id="successAnimationCheck" stroke="#979797" stroke-width="2" points="23 34 34 43 47 27"
+                        fill="transparent" />
+                </svg>
+            </div>
+        </div>
+        <div id="contact" class="get-in-touch page4 section" data-section-name="contact--me">
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
+            <script>
+                function myVisible () {
+                        if (submitted == true) {
+                            jQuery(".box").css("display", "flex");
+                            $(".box").delay(2500).fadeOut("slow");
+                           // console.log("poslato");
+                          //  alert("done!!");
+                        }
 
+                }
+                </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+                     {document.forms['mG61Hd'].reset(), myVisible();;} "></iframe>
+            <!--  <div class="">
+                <h2 id="form--title" class="title">Get in touch</h2>
+            </div> -->
             <form class="contact-form row" action="https://docs.google.com/forms/d/e/1FAIpQLSdxHGZNdaiRiRWWanmKZ_nRJ3uQmhwyIcms6jtfMHH22X6fjQ/formResponse"
-                target="_self" method="POST" id="mG61Hd">
-                <h2 class="title">Get in touch</h2>
+                method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+
                 <div class="form-field col x-50 input">
                     <input id="name" class="input-text js-input quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf"
                         autocomplete="off" tabindex="0" aria-label="name" aria-describedby="i.desc.1913370441 i.err.1913370441"
@@ -724,13 +754,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="js/tiltfx.js"></script>
     <script src="js/overlay.js"></script>
     <script src="js/switchstyler.js"></script>
-
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/isotope.pkgd.min.min.js"></script>
     <script src="js/packery-mode.pkgd.min.js"></script>
     <script src="js/parallaxTilt.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/jquery.scrollify.js"></script>
+    <script src="js/onViewport.js"></script>
 
 
     <script>
@@ -768,6 +798,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 filter: selector
             });
             return false;
+
             $.scrollify.update();
             console.log("filtered!");
         });
@@ -806,6 +837,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     $('#tag').css('border-top', '4px solid #0058fb');
                 });
+            });
+            $(".Menu-list-item").click(function () {
+                $('.Menu-list-item').removeClass('hovered');
+                $(this).addClass('hovered');
             });
         } else {
             $(function () {
@@ -857,6 +892,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             removeClass: '' //classes to remove
         });
     </script>
+    <script>
+        $("#form--title").switchstyler({ //fixed object
+            on: '.section--4', //target section
+            addClass: 'anim-typewriter',
+            removeClass: '' //classes to remove
+        });
+    </script>
 
     <script src="js/mobile-chrome-vh-fix.js"></script>
 
@@ -873,7 +915,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ]);*/
     </script>
     <script>
-        $(function () {
+        /*  $(function () {
             $.scrollify({
                 section: ".section",
                 //standardScrollElements: ".page2",
@@ -882,24 +924,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 scrollSpeed: 650,
                 touchScroll: false,
                 setHeights: false,
-                /* after: function(i, evt) {
-    $('.scrollme').eq(i).addClass('show');
-  }, */
-  before: function(i, evt) {
-	$.when(
- 		$('.Menu-list a li').each(function() {
-			$(this).removeClass('hovered');
-      			}))
-		.then(function() {
-      		$('.Menu-list a li').eq(i).addClass('hovered');
-    });
+                //after: function(i, evt) {
+    //$('.scrollme').eq(i).addClass('show');},
+                before: function (i, evt) {
+                    $.when(
+                            $('.Menu-list a li').each(function () {
+                                $(this).removeClass('hovered');
+                            }))
+                        .then(function () {
+                            $('.Menu-list a li').eq(i).addClass('hovered');
+                        });
 
-    return;
+                    return;
 
-  },
+                },
 
             });
-        });
+        }); */
     </script>
     <script>
         lightbox.option({
@@ -933,7 +974,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
 
         });
-
     </script>
     <!--  <script>
         $(window).resize(function () {
@@ -962,77 +1002,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <script src="js/lity.min.js"></script>
 
-    <!--     <script>
-        var $menu = $('.Menu-list'),
-            $item = $('.Menu-list-item'),
-            w = $(window).width(), //window width
-            h = $(window).height(); //window height
 
-        $(window).on('mousemove', function (e) {
-            var offsetX = 0.5 - e.pageX / w, //cursor position X
-                offsetY = 0.5 - e.pageY / h, //cursor position Y
-                dy = e.pageY - h / 2, //@h/2 = center of poster
-                dx = e.pageX - w / 2, //@w/2 = center of poster
-                theta = Math.atan2(dy, dx), //angle between cursor and center of poster in RAD
-                angle = theta * 180 / Math.PI - 90, //convert rad in degrees
-                offsetPoster = $menu.data('offset'),
-                transformPoster = 'translate3d(0, ' + -offsetX * offsetPoster + 'px, 0) rotateX(' + (-offsetY *
-                    offsetPoster) + 'deg) rotateY(' + (offsetX * (offsetPoster * 2)) + 'deg)'; //poster transform
-
-            //get angle between 0-360
-            if (angle < 0) {
-                angle = angle + 360;
-            }
-
-            //poster transform
-            $menu.css('transform', transformPoster);
-
-            //parallax for each layer
-            $item.each(function () {
-                var $this = $(this),
-                    offsetLayer = $this.data('offset') || 0,
-                    transformLayer = 'translate3d(' + offsetX * offsetLayer + 'px, ' + offsetY *
-                    offsetLayer + 'px, 20px)';
-
-                $this.css('transform', transformLayer);
+    <script>
+        $(document).ready(function () {
+            $('#filters i').click(function () {
+                $.scrollify.update();
+                $grid.isotope('shuffle');
+                console.log("FILTERED + UPDATED");
             });
         });
+    </script>
+
+    <script>
+        $('#filters i').click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#gallery").offset().top
+                },
+                'slow');
+        });
+    </script>
+    <script>
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        if (!isMobile()) {
+            $(function () {
+                $.scrollify({
+                    section: ".section",
+                    //standardScrollElements: ".page2",
+
+                    //interstitialSection: ".grid--sect",
+                    scrollSpeed: 650,
+                    touchScroll: false,
+                    setHeights: false,
+                    /* after: function(i, evt) {
+    $('.scrollme').eq(i).addClass('show');
+  }, */
+                    before: function (i, evt) {
+                        $.when(
+                                $('.Menu-list a li').each(function () {
+                                    $(this).removeClass('hovered');
+                                }))
+                            .then(function () {
+                                $('.Menu-list a li').eq(i).addClass('hovered');
+                            });
+
+                        return;
+
+                    },
+
+                });
+            });
+
+        }
+    </script>
+    <!-- <script>
+        $(pageN) = $.scrollify.currentIndex();
+
+        if (pageN == 3) {
+            $("#mG61Hd > h2").addClass("anim-typewriter");
+            console.log(pageN);
+        }
     </script> -->
     <script>
-        $(document).ready(function(){
-            $('#filters i').click(function (){
-    $.scrollify.update();
-    console.log("FILTERED + UPDATED");
-});
-});
-
-    </script>
-
-    <script>
-    $('#filters i').click(function () {
-    $('html,body').animate({
-        scrollTop: $("#gallery").offset().top},
-        'slow');
-});
+        onViewport(".title", "anim-typewriter", 300, function () {
+            console.log("This is not a drill.")
+        });
     </script>
     <script>
-   /*  let stranica = $.scrollify.currentIndex();
-
-    if (stranica == 0) {
-        $("#menu-1").toggleClass("hovered").siblings().removeClass("hovered");
-        $.scrollify.currentIndex();
-    }
-     if (stranica == 1) {
-        $("#menu-1").removeClass("hovered");
-        $("#menu-2").toggleClass("hovered").siblings().removeClass("hovered");
-
-    } */
-  /*   $(".Menu-list-item").click(function(){
-    $('.Menu-list-item').removeClass('hovered');
-    $(this).addClass('hovered');
- }); */
-
-
+        $('input').keyup(function () {
+            if ($.trim($('input').val()).length) {
+                $(this).addClass('active-text');
+            } else {
+                $(this).removeClass('active-text');
+            }
+        });
     </script>
 </body>
 
