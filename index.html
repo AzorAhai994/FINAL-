@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marinko Brdarević</title>
+    <title>Marinko Brdarević | PORTFOLIO</title>
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="img/icon.png">
     <meta name="theme-color" content="#191215" />
@@ -132,6 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }, 1500);
         })
     </script>
+
     <!-- end of 0 PRELOADER -->
 
     <!-- 0.5 NAVIGATION MENU -->
@@ -228,10 +229,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div data-depth="0.20" class="itm">
                     <img src="img/d3-2.svg">
                 </div>
-
-
-
-
             </div>
             <div class="scroll-indicator">
                 <p class="scroll">Scroll</p>
@@ -291,331 +288,367 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
             </div>
+            <script>
+                /* MODERNIZR BEFORE LOADING IMAGES */
+                Modernizr.on('webp', function (result) {
+                    // `result == Modernizr.webp`
 
+                    var a = document.getElementById('gallery').getElementsByTagName('a');
+                    var thumbnail = document.getElementById('gallery').getElementsByTagName("img");
+                    var duzina = a.length;
+                    var imgLenght = thumbnail.length;
+
+                    console.log(result); // either `true` or `false`
+                    if (result) {
+                        // Has WebP support
+                        console.log(imgLenght);
+                        for (var i = 0; i < duzina; i++) {
+                            if (i == 62) continue;
+                            a[i].href = 'img/webp/l/img_' + [i + 1] + '.webp';
+
+                        }
+
+                        for (let j = 0; j < imgLenght; j++) {
+                            thumbnail[j].src = 'img/webp/img_' + [j + 1] + '.webp';
+                        }
+                    } else {
+                        // No WebP support
+                        console.log("No .WEBP");
+                        for (var k = 0; k < duzina; k++) {
+                            if (k == 62) continue;
+                            a[k].href = 'img/l/img_' + [k + 1] + '.jpg';
+
+                        }
+
+                        for (let l = 0; l < imgLenght; l++) {
+                            thumbnail[l].src = 'img/img_' + [l + 1] + '.jpg';
+                        }
+                    }
+                });
+            </script>
             <div id="gallery" class="grid gallery">
                 <div class="grid-sizer">
 
                 </div>
-                <a href="img/l/img_01.jpg" data-lightbox="image" data-title="Tiny planet ver. 3 [🌍☀🏖🕶] ">
+                <a href="" data-lightbox="image" data-title="Tiny planet ver. 3 [🌍☀🏖🕶] ">
                     <div class="grid-item photos" data-category="photos">
-                        <img id="myimg" src="img/img_01.jpg" data-webp="img/img_01.webp" title="Tiny planet ver. 3 [ 🌍☀🏖🕶 ]"
-                            alt="Tiny planet ver. 3">
+                        <img id="myimg" src="" data-webp="img/img_01.webp" title="Tiny planet ver. 3 [ 🌍☀🏖🕶 ]" alt="Tiny planet ver. 3">
                     </div>
                 </a>
 
-                <a href="img/l/img_02.jpg" data-lightbox="image" data-title="#0x190 a/k/a get illuminated
+                <a href="" data-lightbox="image" data-title="#0x190 a/k/a get illuminated
                 a/k/a #400 [ 👁 x💡 ] 💥🎉 ">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_02.jpg" title="#0x190 a/k/a get illuminated
+                        <img src="" title="#0x190 a/k/a get illuminated
                         a/k/a #400 [ 👁 x💡 ] 💥🎉 "
                             alt="Eye">
                     </div>
                 </a>
 
-                <a href="img/l/img_03.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №1">
+                <a href="" data-lightbox="image" data-title="Tiny planet 🌍 outtake №1">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_03.jpg" title="Tiny planet 🌍 outtake №1" alt="Tiny planet outtake #1">
+                        <img src="" title="Tiny planet 🌍 outtake №1" alt="Tiny planet outtake #1">
                     </div>
                 </a>
-                <a href="img/l/img_04.jpg" data-lightbox="image" data-title="Crazy NY selfie vol. IV [ light purification ritual 💡]">
+                <a href="" data-lightbox="image" data-title="Crazy NY selfie vol. IV [ light purification ritual 💡]">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_04.jpg" title="Crazy NY selfie vol. IV [ light purification ritual 💡]" alt="NY selfie">
+                        <img src="" title="Crazy NY selfie vol. IV [ light purification ritual 💡]" alt="NY selfie">
                     </div>
                 </a>
-                <a href="img/l/img_05.jpg" data-lightbox="image" data-title="Dog x balloon [version 2.06] 🐶 x🎈">
+                <a href="" data-lightbox="image" data-title="Dog x balloon [version 2.06] 🐶 x🎈">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_05.jpg" title="Dog x balloon [version 2.06] 🐶 x🎈" alt="Dog x ballon">
+                        <img src="" title="Dog x balloon [version 2.06] 🐶 x🎈" alt="Dog x ballon">
                     </div>
                 </a>
-                <a href="img/l/img_06.jpg" data-lightbox="image" data-title="Ušće Tower vol. I 🏢">
+                <a href="" data-lightbox="image" data-title="Ušće Tower vol. I 🏢">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_06.jpg" title="Ušće Tower vol. I 🏢" alt="Ušće Tower">
+                        <img src="" title="Ušće Tower vol. I 🏢" alt="Ušće Tower">
                     </div>
                 </a>
-                <a href="img/l/img_07.jpg" data-lightbox="image" data-title="Random stuff x snow x sunset x golden hour ❄">
+                <a href="" data-lightbox="image" data-title="Random stuff x snow x sunset x golden hour ❄">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_07.jpg" title="Random stuff x snow x sunset x golden hour ❄" alt="Snow x sunset">
+                        <img src="" title="Random stuff x snow x sunset x golden hour ❄" alt="Snow x sunset">
                     </div>
                 </a>
-                <a href="img/l/img_08.jpg" data-lightbox="image" data-title="Millennium Tower 🗼😄 1/4">
+                <a href="" data-lightbox="image" data-title="Millennium Tower 🗼😄 1/4">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_08.jpg" title="Millennium Tower 🗼😄 1/4" alt="Millennium Tower">
+                        <img src="" title="Millennium Tower 🗼😄 1/4" alt="Millennium Tower">
                     </div>
                 </a>
-                <a href="img/l/img_09.jpg" data-lightbox="image" data-title="Strike a pose 😄💖">
+                <a href="" data-lightbox="image" data-title="Strike a pose 😄💖">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_09.jpg" title="Strike a pose 😄💖" alt="Strike a pose">
+                        <img src="" title="Strike a pose 😄💖" alt="Strike a pose">
                     </div>
                 </a>
-                <a href="img/l/img_10.jpg" data-lightbox="image" data-title="Laser experiment 🔦🔙">
+                <a href="" data-lightbox="image" data-title="Laser experiment 🔦🔙">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_10.jpg" title="Laser experiment 🔦🔙" alt="Laser experiment">
+                        <img src="" title="Laser experiment 🔦🔙" alt="Laser experiment">
                     </div>
                 </a>
-                <a href="img/l/img_11.jpg" data-lightbox="image" data-title="Powerline x star trails">
+                <a href="" data-lightbox="image" data-title="Powerline x star trails">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_11.jpg" title="Powerline x star trails" alt="Powerline x star trails">
+                        <img src="" title="Powerline x star trails" alt="Powerline x star trails">
                     </div>
                 </a>
-                <a href="img/l/img_12.jpg" data-lightbox="image" data-title="Blue 🌸">
+                <a href="" data-lightbox="image" data-title="Blue 🌸">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_12.jpg" title="Blue 🌸" alt="Blue flower">
+                        <img src="" title="Blue 🌸" alt="Blue flower">
                     </div>
                 </a>
-                <a href="img/l/img_13.jpg" data-lightbox="image" data-title="Sunflower core x bees 🐝🌻">
+                <a href="" data-lightbox="image" data-title="Sunflower core x bees 🐝🌻">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_13.jpg" title="Sunflower core x bees 🐝🌻" alt="Sunflower core x bees">
+                        <img src="" title="Sunflower core x bees 🐝🌻" alt="Sunflower core x bees">
                     </div>
                 </a>
-                <a href="img/l/img_14.jpg" data-lightbox="image" data-title="ヒナギク [ Bellis perennis ] 🌼🌸 II">
+                <a href="" data-lightbox="image" data-title="ヒナギク [ Bellis perennis ] 🌼🌸 II">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_14.jpg" title="ヒナギク [ Bellis perennis ] 🌼🌸 II" alt="ヒナギク [ Bellis perennis ]">
+                        <img src="" title="ヒナギク [ Bellis perennis ] 🌼🌸 II" alt="ヒナギク [ Bellis perennis ]">
                     </div>
                 </a>
-                <a href="img/l/img_15.jpg" data-lightbox="image" data-title="Tiny planet ver. 3.1 [🌍☀🏖🕶]">
+                <a href="" data-lightbox="image" data-title="Tiny planet ver. 3.1 [🌍☀🏖🕶]">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_15.jpg" title="Tiny planet ver. 3.1 [🌍☀🏖🕶]" alt="Tiny planet ver. 3.1">
+                        <img src="" title="Tiny planet ver. 3.1 [🌍☀🏖🕶]" alt="Tiny planet ver. 3.1">
                     </div>
                 </a>
-                <a href="img/l/img_16.jpg" data-lightbox="image" data-title="[🙆 x 🌊]">
+                <a href="" data-lightbox="image" data-title="[🙆 x 🌊]">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_16.jpg" title="[🙆 x 🌊]" alt="[🙆 x 🌊]">
+                        <img src="" title="[🙆 x 🌊]" alt="[🙆 x 🌊]">
                     </div>
                 </a>
-                <a href="img/l/img_17.jpg" data-lightbox="image" data-title="Iκαρος vol. II">
+                <a href="" data-lightbox="image" data-title="Iκαρος vol. II">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_17.jpg" title="Iκαρος vol. II" alt="Iκαρος vol. II">
+                        <img src="" title="Iκαρος vol. II" alt="Iκαρος vol. II">
                     </div>
                 </a>
-                <a href="img/l/img_18.jpg" data-lightbox="image" data-title="Ada Bridge 🌁">
+                <a href="" data-lightbox="image" data-title="Ada Bridge 🌁">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_18.jpg" title="Ada Bridge 🌁" alt="Ada Bridge">
+                        <img src="" title="Ada Bridge 🌁" alt="Ada Bridge">
                     </div>
                 </a>
-                <a href="img/l/img_19.jpg" data-lightbox="image" data-title="Banner design">
+                <a href="" data-lightbox="image" data-title="Banner design">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_19.jpg" title="Banner design" alt="Banner design">
+                        <img src="" title="Banner design" alt="Banner design">
                     </div>
                 </a>
-                <a href="img/l/img_20.jpg" data-lightbox="image" data-title="Bug x flower [🐜x🌸] ">
+                <a href="" data-lightbox="image" data-title="Bug x flower [🐜x🌸] ">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_20.jpg" title="Bug x flower [🐜x🌸] " alt="Bug x flower">
+                        <img src="" title="Bug x flower [🐜x🌸] " alt="Bug x flower">
                     </div>
                 </a>
-                <a href="img/l/img_21.jpg" data-lightbox="image" data-title="The MB logo x ink FJUŽN">
+                <a href="" data-lightbox="image" data-title="The MB logo x ink FJUŽN">
                     <div class="grid-item logos other" data-category="logos other">
-                        <img src="img/img_21.jpg" title="The MB logo x ink FJUŽN" alt="The MB logo x ink FJUŽN">
+                        <img src="" title="The MB logo x ink FJUŽN" alt="The MB logo x ink FJUŽN">
                     </div>
                 </a>
-                <a href="img/l/img_22.jpg" data-lightbox="image" data-title="2017 outtake #6 [ sunset x tree ] 🌄⬇ ">
+                <a href="" data-lightbox="image" data-title="2017 outtake #6 [ sunset x tree ] 🌄⬇ ">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_22.jpg" title="2017 outtake #6 [ sunset x tree ] 🌄⬇ " alt="2017 outtake #6 [ sunset x tree ]">
+                        <img src="" title="2017 outtake #6 [ sunset x tree ] 🌄⬇ " alt="2017 outtake #6 [ sunset x tree ]">
                     </div>
                 </a>
-                <a href="img/l/img_23.jpg" data-lightbox="image" data-title="Bee x cherry blossoms [🐝x🌸] ">
+                <a href="" data-lightbox="image" data-title="Bee x cherry blossoms [🐝x🌸] ">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_23.jpg" title="Bee x cherry blossoms [🐝x🌸] " alt="Bee x cherry blossoms">
+                        <img src="" title="Bee x cherry blossoms [🐝x🌸] " alt="Bee x cherry blossoms">
                     </div>
                 </a>
-                <a href="img/l/img_24.jpg" data-lightbox="image" data-title="Lightpainting experiment vol. II 💡😁">
+                <a href="" data-lightbox="image" data-title="Lightpainting experiment vol. II 💡😁">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_24.jpg" title="Lightpainting experiment vol. II 💡😁" alt="Lightpainting experiment vol. II">
+                        <img src="" title="Lightpainting experiment vol. II 💡😁" alt="Lightpainting experiment vol. II">
                     </div>
                 </a>
-                <a href="img/l/img_25.jpg" data-lightbox="image" data-title="Kalemegdan sunset vol. I 🌇">
+                <a href="" data-lightbox="image" data-title="Kalemegdan sunset vol. I 🌇">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_25.jpg" title="Kalemegdan sunset vol. I 🌇" alt="Kalemegdan sunset vol. I">
+                        <img src="" title="Kalemegdan sunset vol. I 🌇" alt="Kalemegdan sunset vol. I">
                     </div>
                 </a>
-                <a href="img/l/img_26.jpg" data-lightbox="image" data-title="ANTI design">
+                <a href="" data-lightbox="image" data-title="ANTI design">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_26.jpg" title="ANTI design" alt="ANTI design">
+                        <img src="" title="ANTI design" alt="ANTI design">
                     </div>
                 </a>
-                <a href="img/l/img_27.jpg" data-lightbox="image" data-title="Starry night II 🌟✨🌉">
+                <a href="" data-lightbox="image" data-title="Starry night II 🌟✨🌉">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_27.jpg" title="Starry night II 🌟✨🌉" alt="Starry night II">
+                        <img src="" title="Starry night II 🌟✨🌉" alt="Starry night II">
                     </div>
                 </a>
-                <a href="img/l/img_28.jpg" data-lightbox="image" data-title="Fire 🔥💥">
+                <a href="" data-lightbox="image" data-title="Fire 🔥💥">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_28.jpg" title="Fire 🔥💥" alt="Fire">
+                        <img src="" title="Fire 🔥💥" alt="Fire">
                     </div>
                 </a>
-                <a href="img/l/img_29.jpg" data-lightbox="image" data-title="Star trails II 🌌">
+                <a href="" data-lightbox="image" data-title="Star trails II 🌌">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_29.jpg" title="Star trails II 🌌" alt="Star trails II">
+                        <img src="" title="Star trails II 🌌" alt="Star trails II">
                     </div>
                 </a>
-                <a href="img/l/img_30.jpg" data-lightbox="image" data-title="Inception poster ver. 1">
+                <a href="" data-lightbox="image" data-title="Inception poster ver. 1">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_30.jpg" title="Inception poster ver. 1" alt="Inception poster ver. 1">
+                        <img src="" title="Inception poster ver. 1" alt="Inception poster ver. 1">
                     </div>
                 </a>
-                <a href="img/l/img_31.jpg" data-lightbox="image" data-title="Inception poster ver. 2">
+                <a href="" data-lightbox="image" data-title="Inception poster ver. 2">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_31.jpg" title="Inception poster ver. 2" alt="Inception poster ver. 2">
+                        <img src="" title="Inception poster ver. 2" alt="Inception poster ver. 2">
                     </div>
                 </a>
-                <a href="img/l/img_32.jpg" data-lightbox="image" data-title="Ionnalee Gone art rasterization">
+                <a href="" data-lightbox="image" data-title="Ionnalee Gone art rasterization">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_32.jpg" title="Ionnalee Gone art rasterization" alt="Ionnalee Gone art rasterization">
+                        <img src="" title="Ionnalee Gone art rasterization" alt="Ionnalee Gone art rasterization">
                     </div>
                 </a>
-                <a href="img/l/img_33.jpg" data-lightbox="image" data-title="Kupi mi kafu logo design ☕">
+                <a href="" data-lightbox="image" data-title="Kupi mi kafu logo design ☕">
                     <div class="grid-item logos" data-category="logos">
-                        <img src="img/img_33.jpg" title="Kupi mi kafu logo design ☕" alt="Kupi mi kafu logo design">
+                        <img src="" title="Kupi mi kafu logo design ☕" alt="Kupi mi kafu logo design">
                     </div>
                 </a>
-                <a href="img/l/img_34.jpg" data-lightbox="image" data-title="Kupi mi kafu logo mockup ☕">
+                <a href="" data-lightbox="image" data-title="Kupi mi kafu logo mockup ☕">
                     <div class="grid-item logos" data-category="logos">
-                        <img src="img/img_34.jpg" title="Kupi mi kafu logo mockup ☕" alt="Kupi mi kafu logo mockup">
+                        <img src="" title="Kupi mi kafu logo mockup ☕" alt="Kupi mi kafu logo mockup">
                     </div>
                 </a>
-                <a href="img/l/img_35.jpg" data-lightbox="image" data-title="NIKA Solutions logo design 🔺">
+                <a href="" data-lightbox="image" data-title="NIKA Solutions logo design 🔺">
                     <div class="grid-item logos" data-category="logos">
-                        <img src="img/img_35.jpg" title="NIKA Solutions logo design 🔺" alt="NIKA Solutions logo design">
+                        <img src="" title="NIKA Solutions logo design 🔺" alt="NIKA Solutions logo design">
                     </div>
                 </a>
-                <a href="img/l/img_36.jpg" data-lightbox="image" data-title="ITA NY Card contest 🎄">
+                <a href="" data-lightbox="image" data-title="ITA NY Card contest 🎄">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_36.jpg" title="ITA NY Card contest 🎄" alt="ITA NY Card contest">
+                        <img src="" title="ITA NY Card contest 🎄" alt="ITA NY Card contest">
                     </div>
                 </a>
-                <a href="img/l/img_37.jpg" data-lightbox="image" data-title="Eiffel Tower card design 🗼">
+                <a href="" data-lightbox="image" data-title="Eiffel Tower card design 🗼">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_37.jpg" title="Eiffel Tower card design 🗼" alt="Eiffel Tower card design">
+                        <img src="" title="Eiffel Tower card design 🗼" alt="Eiffel Tower card design">
                     </div>
                 </a>
-                <a href="img/l/img_38.jpg" data-lightbox="image" data-title="The Louvre card design">
+                <a href="" data-lightbox="image" data-title="The Louvre card design">
                     <div class="grid-item other" data-category="other">
-                        <img src="img/img_38.jpg" title="The Louvre card design" alt="The Louvre card design">
+                        <img src="" title="The Louvre card design" alt="The Louvre card design">
                     </div>
                 </a>
-                <a href="img/l/img_39.jpg" data-lightbox="image" data-title="ARTPOP t-shirt design 👕">
+                <a href="" data-lightbox="image" data-title="ARTPOP t-shirt design 👕">
                     <div class="grid-item t-shirts" data-category="t-shirts">
-                        <img src="img/img_39.jpg" title="ARTPOP t-shirt design 👕" alt="ARTPOP t-shirt design">
+                        <img src="" title="ARTPOP t-shirt design 👕" alt="ARTPOP t-shirt design">
                     </div>
                 </a>
-                <a href="img/l/img_40.jpg" data-lightbox="image" data-title="Swine t-shirt design 👕">
+                <a href="" data-lightbox="image" data-title="Swine t-shirt design 👕">
                     <div class="grid-item t-shirts" data-category="t-shirts">
-                        <img src="img/img_40.jpg" title="Swine t-shirt design 👕" alt="Swine t-shirt design">
+                        <img src="" title="Swine t-shirt design 👕" alt="Swine t-shirt design">
                     </div>
                 </a>
-                <a href="img/l/img_41.jpg" data-lightbox="image" data-title="DWUW t-shirt design 👕">
+                <a href="" data-lightbox="image" data-title="DWUW t-shirt design 👕">
                     <div class="grid-item t-shirts" data-category="t-shirts">
-                        <img src="img/img_41.jpg" title="DWUW t-shirt design 👕" alt="DWUW t-shirt design">
+                        <img src="" title="DWUW t-shirt design 👕" alt="DWUW t-shirt design">
                     </div>
                 </a>
-                <a href="img/l/img_42.jpg" data-lightbox="image" data-title="Judas t-shirt design 👕">
+                <a href="" data-lightbox="image" data-title="Judas t-shirt design 👕">
                     <div class="grid-item t-shirts" data-category="t-shirts">
-                        <img src="img/img_42.jpg" title="Judas t-shirt design 👕" alt="Judas t-shirt design">
+                        <img src="" title="Judas t-shirt design 👕" alt="Judas t-shirt design">
                     </div>
                 </a>
-                <a href="img/l/img_43.jpg" data-lightbox="image" data-title="Scheiße t-shirt design 👕">
+                <a href="" data-lightbox="image" data-title="Scheiße t-shirt design 👕">
                     <div class="grid-item t-shirts" data-category="t-shirts">
-                        <img src="img/img_43.jpg" title="Scheiße t-shirt design 👕" alt="Scheiße t-shirt design">
+                        <img src="" title="Scheiße t-shirt design 👕" alt="Scheiße t-shirt design">
                     </div>
                 </a>
-                <a href="img/l/img_44.jpg" data-lightbox="image" data-title="Business Card design 💇">
+                <a href="" data-lightbox="image" data-title="Business Card design 💇">
                     <div class="grid-item logos other" data-category="logos other">
-                        <img src="img/img_44.jpg" title="Business Card design 💇" alt="Business Card design">
+                        <img src="" title="Business Card design 💇" alt="Business Card design">
                     </div>
                 </a>
-                <a href="img/l/img_45.jpg" data-lightbox="image" data-title="Star trails 🌌">
+                <a href="" data-lightbox="image" data-title="Star trails 🌌">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_45.jpg" title="Star trails 🌌" alt="Star trails">
+                        <img src="" title="Star trails 🌌" alt="Star trails">
                     </div>
                 </a>
-                <a href="img/l/img_46.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №4">
+                <a href="" data-lightbox="image" data-title="Tiny planet 🌍 outtake №4">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_46.jpg" title="Tiny planet 🌍 outtake №4" alt="Tiny planet outtake №4">
+                        <img src="" title="Tiny planet 🌍 outtake №4" alt="Tiny planet outtake №4">
                     </div>
                 </a>
-                <a href="img/l/img_47.jpg" data-lightbox="image" data-title="Get illuminated 💡">
+                <a href="" data-lightbox="image" data-title="Get illuminated 💡">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_47.jpg" title="Get illuminated 💡" alt="Get illuminated">
+                        <img src="" title="Get illuminated 💡" alt="Get illuminated">
                     </div>
                 </a>
-                <a href="img/l/img_48.jpg" data-lightbox="image" data-title="Belgrade waterfront 🌆">
+                <a href="" data-lightbox="image" data-title="Belgrade waterfront 🌆">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_48.jpg" title="Belgrade waterfront 🌆" alt="Belgrade waterfront">
+                        <img src="" title="Belgrade waterfront 🌆" alt="Belgrade waterfront">
                     </div>
                 </a>
-                <a href="img/l/img_49.png" data-lightbox="image" data-title="Zvučni Zid logo design 🔊">
+                <a href="" data-lightbox="image" data-title="Zvučni Zid logo design 🔊">
                     <div class="grid-item logos" data-category="logos">
-                        <img src="img/img_49.jpg" title="Zvučni Zid logo design 🔊" alt="Zvučni Zid logo design">
+                        <img src="" title="Zvučni Zid logo design 🔊" alt="Zvučni Zid logo design">
                     </div>
                 </a>
-                <a href="img/l/img_50.jpg" data-lightbox="image" data-title="Zvučni Zid logo mockup 🔊">
+                <a href="" data-lightbox="image" data-title="Zvučni Zid logo mockup 🔊">
                     <div class="grid-item logos" data-category="logos">
-                        <img src="img/img_50.jpg" title="Zvučni Zid logo mockup 🔊" alt="Zvučni Zid logo mockup">
+                        <img src="" title="Zvučni Zid logo mockup 🔊" alt="Zvučni Zid logo mockup">
                     </div>
                 </a>
-                <a href="img/l/img_51.jpg" data-lightbox="image" data-title="Prunus armeniaca 🌸">
+                <a href="" data-lightbox="image" data-title="Prunus armeniaca 🌸">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_51.jpg" title="Prunus armeniaca 🌸" alt="Prunus armeniaca">
+                        <img src="" title="Prunus armeniaca 🌸" alt="Prunus armeniaca">
                     </div>
                 </a>
-                <a href="img/l/img_52.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake №2">
+                <a href="" data-lightbox="image" data-title="Tiny planet 🌍 outtake №2">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_52.jpg" title="Tiny planet 🌍 outtake №2" alt="Tiny planet outtake №2">
+                        <img src="" title="Tiny planet 🌍 outtake №2" alt="Tiny planet outtake №2">
                     </div>
                 </a>
-                <a href="img/l/img_53.jpg" data-lightbox="image" data-title="Tiny planet 🌨🌍">
+                <a href="" data-lightbox="image" data-title="Tiny planet 🌨🌍">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_53.jpg" title="Tiny planet 🌨🌍" alt="Tiny planet">
+                        <img src="" title="Tiny planet 🌨🌍" alt="Tiny planet">
                     </div>
                 </a>
-                <a href="img/l/img_54.jpg" data-lightbox="image" data-title="Tiny planet 🌍 outtake № 3">
+                <a href="" data-lightbox="image" data-title="Tiny planet 🌍 outtake № 3">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_54.jpg" title="Tiny planet 🌍 outtake № 3" alt="Tiny planet outtake № 3">
+                        <img src="" title="Tiny planet 🌍 outtake № 3" alt="Tiny planet outtake № 3">
                     </div>
                 </a>
-                <a href="img/l/img_55.jpg" data-lightbox="image" data-title="Algae sp. 10x40 🔬">
+                <a href="" data-lightbox="image" data-title="Algae sp. 10x40 🔬">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_55.jpg" title="Algae sp. 10x40 🔬" alt="Algae sp. 10x40">
+                        <img src="" title="Algae sp. 10x40 🔬" alt="Algae sp. 10x40">
                     </div>
                 </a>
-                <a href="img/l/img_56.jpg" data-lightbox="image" data-title="Zinnia elegans 🌸">
+                <a href="" data-lightbox="image" data-title="Zinnia elegans 🌸">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_56.jpg" title="Zinnia elegans 🌸" alt="Zinnia elegans">
+                        <img src="" title="Zinnia elegans 🌸" alt="Zinnia elegans">
                     </div>
                 </a>
-                <a href="img/l/img_57.jpg" data-lightbox="image" data-title="Autumn vibeZ 🍁🍂">
+                <a href="" data-lightbox="image" data-title="Autumn vibeZ 🍁🍂">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_57.jpg" title="Autumn vibeZ 🍁🍂" alt="Autumn vibeZ">
+                        <img src="" title="Autumn vibeZ 🍁🍂" alt="Autumn vibeZ">
                     </div>
                 </a>
-                <a href="img/l/img_58.jpg" data-lightbox="image" data-title="MagdalenQo 😹">
+                <a href="" data-lightbox="image" data-title="MagdalenQo 😹">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_58.jpg" title="MagdalenQo 😹" alt="MagdalenQo">
+                        <img src="" title="MagdalenQo 😹" alt="MagdalenQo">
                     </div>
                 </a>
-                <a href="img/l/img_59.jpg" data-lightbox="image" data-title="Eye of the tiger (almost) 🐱🐈">
+                <a href="" data-lightbox="image" data-title="Eye of the tiger (almost) 🐱🐈">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_59.jpg" title="Eye of the tiger (almost) 🐱🐈" alt="Eye of the tiger (almost)">
+                        <img src="" title="Eye of the tiger (almost) 🐱🐈" alt="Eye of the tiger (almost)">
                     </div>
                 </a>
-                <a href="img/l/img_60.jpg" data-lightbox="image" data-title="'čela / Bee">
+                <a href="" data-lightbox="image" data-title="'čela / Bee">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_60.jpg" title="'čela / Bee" alt="'čela / Bee">
+                        <img src="" title="'čela / Bee" alt="'čela / Bee">
                     </div>
                 </a>
-                <a href="img/l/img_61.jpg" data-lightbox="image" data-title="Star trails 🌌">
+                <a href="" data-lightbox="image" data-title="Star trails 🌌">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_61.jpg" title="Star trails 🌌" alt="Star trails">
+                        <img src="" title="Star trails 🌌" alt="Star trails">
                     </div>
                 </a>
-                <a href="img/l/img_62.jpg" data-lightbox="image" data-title="A tiny speck of dust, floating in space. [🌍x🌌]">
+                <a href="" data-lightbox="image" data-title="A tiny speck of dust, floating in space. [🌍x🌌]">
                     <div class="grid-item photos" data-category="photos">
-                        <img src="img/img_62.jpg" title="A tiny speck of dust, floating in space. [🌍x🌌]" alt="A tiny speck of dust, floating in space.">
+                        <img src="" title="A tiny speck of dust, floating in space. [🌍x🌌]" alt="A tiny speck of dust, floating in space.">
                     </div>
                 </a>
 
                 <a href="//www.youtube.com/watch?v=wF_PYICqnY0" data-lity data-title="Mapchat UI Design 🗺️📍">
                     <div class="grid-item logos other" data-category="logos other">
-                        <img src="img/img_63.jpg" title="Mapchat UI Design 🗺️📍" alt="Mapchat UI Design">
+                        <img src="" title="Mapchat UI Design 🗺️📍" alt="Mapchat UI Design">
                     </div>
                 </a>
                 <!-- <a href="img/l/img_632.jpg" data-lightbox="image" data-title="Mapchat UI Design 🗺️📍"></a>
@@ -948,33 +981,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         })
     </script>
 
-    <script>
-        Modernizr.on('webp', function (result) {
 
 
-            var a = document.getElementById('gallery').getElementsByTagName('a');
-            var thumbnail = document.getElementById('gallery').getElementsByTagName("img");
-            var duzina = a.length;
-            var imgLenght = thumbnail.length;
-
-
-            if (result) {
-                console.log(imgLenght);
-                for (var i = 0; i < duzina; i++) {
-                    if (i == 62) continue;
-                    a[i].href = 'img/webp/l/img_' + [i + 1] + '.webp';
-
-                }
-
-                for (let j = 0; j < imgLenght; j++) {
-                    thumbnail[j].src = 'img/webp/img_' + [j + 1] + '.webp';
-
-                }
-
-            }
-
-        });
-    </script>
     <!--  <script>
         $(window).resize(function () {
             if (window.innerWidth > 768) {
