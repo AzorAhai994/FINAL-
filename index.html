@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:url" content="http://www.marinko-brdarevic.com/">
     <link rel="icon" sizes="192x192" href="img/icon.png">
     <meta name="keywords" content="web dizajn, web design, izrada web sajtova, web design services, usluga izrade web sajtova, web dizajn povoljno, web design and developments services, logo dizajn, graficki dizajn, web design studio, fotografija, responsive web design services">
-    <meta name="theme-color" content="#191215" />
+    <meta name="theme-color" content="#000f16" />
     <link rel="shortcut icon" href="img/icon.ico" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/style-adsila.css" />
@@ -1064,7 +1064,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             .then(function () {
                                 $('.Menu-list a li').eq(i).addClass('hovered');
                             });
+                            /* var pageN = $.scrollify.currentIndex();
+                            console.log(pageN);
 
+                         if (pageN == 1) {
+                            $('meta[name=theme-color]').attr('content', '#542cff');
+                        }
+                        else {
+                            $('meta[name=theme-color]').attr('content', '#000f16');
+                        } */
                         return;
 
                     },
@@ -1074,19 +1082,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         }
     </script>
-    <!-- <script>
-        $(pageN) = $.scrollify.currentIndex();
 
-        if (pageN == 3) {
-            $("#mG61Hd > h2").addClass("anim-typewriter");
-            console.log(pageN);
-        }
-    </script> -->
-    <script>
-        onViewport(".title", "anim-typewriter", 300, function () {
-            console.log("This is not a drill.")
-        });
+    <script> // CHANGE COLOR BASED ON URL
+        $(window).scroll(function () {
+                var link = window.location.href
+            if (link.indexOf('#portfolio') > -1) {
+                $('meta[name=theme-color]').attr('content', '#542cff');
+            }
+            else {
+                $('meta[name=theme-color]').attr('content', '#000f16');
+            }
+            });
+
+
     </script>
+
     <script>
         $('input').keyup(function () {
             if ($.trim($('input').val()).length) {

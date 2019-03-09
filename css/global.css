@@ -48,7 +48,7 @@ svg {
 .container {
     z-index: 100000000000;
     position: fixed;
-    background-color: #131417;
+    background-color: #000f16;
     width: 100vw;
     height: 100vh;
     display: flex;
