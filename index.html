@@ -1086,16 +1086,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script> // CHANGE COLOR BASED ON URL
         $(window).scroll(function () {
                 var link = window.location.href
-            if (link.indexOf('#portfolio') > -1) {
+            /* if (link.indexOf('#portfolio') > -1) {
                 $('meta[name=theme-color]').attr('content', '#542cff');
             }
             else {
                 $('meta[name=theme-color]').attr('content', '#000f16');
+            } */
+            if($(".toggle-circle").is(":visible")) {
+                $('meta[name=theme-color]').attr('content', '#542cff')
+            }
+            else {
+            $('meta[name=theme-color]').attr('content', '#000f16');
             }
             });
 
 
     </script>
+
 
     <script>
         $('input').keyup(function () {
