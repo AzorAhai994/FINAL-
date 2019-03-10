@@ -38,6 +38,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /*PRELOADER*/
 
 svg {
