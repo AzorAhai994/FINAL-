@@ -722,12 +722,60 @@ button#deleteme {
 
 /* contact */
 .page4 {
-    height: 100vh;
-    display: flex;
+    /* height: 100vh; */
+    /*  display: flex; */
     /* background: red; */
     width: 100vw;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.form-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: "txt""form";
+}
+
+.form-heading {
+    grid-area: txt;
+    justify-self: center;
+    align-self: end;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.get-in-touch {
+    grid-area: form;
+    justify-self: center;
+    align-self: center;
+}
+
+#form--title {
+    margin-bottom: 0;
+}
+
+h2#form--title span {
+    animation: blink .8s infinite;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .form-heading {
+        font-size: 1.5em;
+    }
 }
 
 .row {
