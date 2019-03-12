@@ -810,10 +810,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="js/lightbox.js"></script>
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/onViewport.js"></script>
-<script>
+<script> // scroll to bottom after submit
     jQuery("#submit-btn").click(function () {
-        $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-        console.log("klik");
+        $("html, body").animate({ scrollTop: $(document).height() - $(window).height() });
     });
 </script>
 
