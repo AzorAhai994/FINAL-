@@ -1,5 +1,5 @@
 {
-  "short_name": "Marinko Design",
+  "short_name": "MarinkoDesign",
   "name": "Marinko Design: Web Portfolio",
   "icons": [
     {
@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/#home",
+  "start_url": "/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/",
