@@ -1171,6 +1171,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   navigator.vibrate([10]);
 });
     </script>
+      
+       <script>
+if ('serviceWorker'in navigator) {
+    navigator.serviceWorker.register('js/sw.js').then(()=>{
+        console.log('Service Worker Registered');
+    }
+    );
+}
+ </script>
 
 </body>
 
